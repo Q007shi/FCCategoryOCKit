@@ -1,0 +1,16 @@
+PODS:
+  - FCCategoryOCKit (0.0.1)
+
+DEPENDENCIES:
+  - FCCategoryOCKit (from `../`)
+
+EXTERNAL SOURCES:
+  FCCategoryOCKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FCCategoryOCKit: 2c5be0aa8d57a667682e1aafaf0970f59c2da42c
+
+PODFILE CHECKSUM: c093db378ea13df60363e4dc4f5da87f41896975
+
+COCOAPODS: 1.8.4

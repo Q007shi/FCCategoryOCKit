@@ -7,6 +7,7 @@
 //
 
 #import "FCViewController.h"
+#import <FCCategoryOCKit/FCStringCategoryHeader.h>
 
 @interface FCViewController ()
 
@@ -17,13 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    //71bb1263090e5e2f60078902592d6879
+    NSLog(@"%@",@"FCCategory".fc_md5);
 }
 
 @end
