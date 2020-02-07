@@ -23,14 +23,13 @@
 
 /** 是否为空，nil 或 NULL  或 "" 是返回 YES，否则为 NO */
 @property (nonatomic, assign, readonly) BOOL fc_isEmpty;
+/** 剔除字符串收尾空格，如果为 nil 就返回 nil  */
+@property(nonatomic,copy, readonly)NSString * _Nullable fc_trimmingWhitespaceCharacter;
 
 #pragma mark - 方法
 
-/** 剔除字符串收尾空格，如果为 nil 就返回 nil */
-- (instancetype _Nullable)fc_trimmingWhitespaceCharacterSetOfHeadAndTail;
-
 /** 剔除指定字符串，如果为 nil 就返回 nil */
-- (instancetype _Nullable)fc_trimmingCustomCharacterSetOfHeadAndTail:(nonnull NSString *)trimmingString;
+- (instancetype _Nullable)fc_trimmingCustomCharacter:(nonnull NSString *)trimmingString;
 
 @end
 

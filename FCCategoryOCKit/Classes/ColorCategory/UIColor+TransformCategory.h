@@ -29,12 +29,10 @@ typedef struct RGBA FC_RGBA;
 10X10 的图片
  */
 @property (nonatomic, strong, readonly) UIImage *fc_image;
+/** 随机色 */
+@property(nonatomic,strong, class, readonly)UIColor *fc_randomColor;
 
 #pragma mark - 方法
-
-/** 随机色 */
-+ (instancetype)fc_randomColor;
-
 
 /** 0xRRGGBB 转 Color */
 + (instancetype)fc_RGBValue:(UInt32)RGBValue;
@@ -63,7 +61,7 @@ typedef struct RGBA FC_RGBA;
  
  @param fromColor 起始颜色
  @param toColor 结束颜色
- @param percent 百分比
+ @param percent 百分比[0,1]
  @return 当前颜色
  */
 + (instancetype)fc_fromColor:(UIColor *)fromColor toColor:(UIColor *)toColor percent:(CGFloat)percent;
@@ -72,7 +70,7 @@ typedef struct RGBA FC_RGBA;
  
  @param fromColor 起始颜色
  @param toColor 结束颜色
- @param percent 百分比
+ @param percent 百分比[0,1]
  @param alpha 透明度
  @return 当前颜色
  */

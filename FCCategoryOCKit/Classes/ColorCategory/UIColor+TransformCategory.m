@@ -52,21 +52,17 @@
     UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
     //消除画笔
     UIGraphicsEndImageContext();
-    //UIImageResizingModeTile : 平铺
-    //UIImageResizingModeStretch : 拉伸
+    //automatic(默认渲染模式),根据上下文渲染;alwaysOriginal, 根据颜色本身渲染；alwaysTemplate，根据 tintColor 渲染
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    //tile,平铺样式；stretch，拉伸样式
     return [image resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 10, 10) resizingMode:UIImageResizingModeStretch];
 }
-
-#pragma mark - 方法
-
 //获取一个随机色
-+ (instancetype)fc_randomColor{
++ (UIColor *)fc_randomColor{
     return [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
 }
 
-
-
+#pragma mark - 方法
 
 /** 0xRRGGBB 转 Color */
 + (instancetype)fc_RGBValue:(UInt32)RGBValue{

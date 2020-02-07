@@ -18,17 +18,16 @@
     return NO;
 }
 
-
-/** 剔除字符串收尾空格，如果为 nil 就返回 nil */
-- (instancetype)fc_trimmingWhitespaceCharacterSetOfHeadAndTail{
+- (NSString *)fc_trimmingWhitespaceCharacter{
     if (self.fc_isEmpty) return nil;
     //
     return [self stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceCharacterSet];
-    
 }
 
+#pragma mark - 方法
+
 /** 剔除指定字符串，如果为 nil 就返回 nil */
-- (instancetype)fc_trimmingCustomCharacterSetOfHeadAndTail:(NSString *)trimmingString{
+- (instancetype)fc_trimmingCustomCharacter:(NSString *)trimmingString{
     if (self.fc_isEmpty) return nil;
     if (trimmingString.fc_isEmpty) return self;
     //
