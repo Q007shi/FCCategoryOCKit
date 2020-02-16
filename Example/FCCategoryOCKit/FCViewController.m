@@ -32,6 +32,8 @@ typedef struct Person FCPerson;
     [super viewDidLoad];
     //71bb1263090e5e2f60078902592d6879
     NSLog(@"%@",@"FCCategory".fc_md5);
+    NSLog(@"%@",@"YYText".fc_md5);
+    
     
     FCPerson person = {@"张三",100};
     FCPerson p = person;

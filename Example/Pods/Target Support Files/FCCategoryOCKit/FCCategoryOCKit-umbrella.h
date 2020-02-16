@@ -12,6 +12,7 @@
 
 #import "UIButton+FCCategory.h"
 #import "UIColor+TransformCategory.h"
+#import "FCCategoryOCKit.h"
 #import "NSObject+FCCategory.h"
 #import "FCStringCategoryHeader.h"
 #import "NSString+BaseCategory.h"
