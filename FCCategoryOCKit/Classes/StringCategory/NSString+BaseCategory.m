@@ -24,6 +24,17 @@
     return [self stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceCharacterSet];
 }
 
+- (NSArray *)fc_toArray{
+    NSMutableArray *arr = NSMutableArray.array;
+    if (!self.fc_isEmpty) {
+        for (int t = 0; t < self.length; t++) {
+            [arr addObject:[self substringWithRange:NSMakeRange(t, 1)]];
+        }
+    }
+    
+    return arr;
+}
+
 #pragma mark - 方法
 
 /** 剔除指定字符串，如果为 nil 就返回 nil */

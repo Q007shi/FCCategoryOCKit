@@ -8,8 +8,14 @@
 #ifndef FCCategoryOCKit_h
 #define FCCategoryOCKit_h
 
-//----
-#define fc_mAttri(str, color, fontSize) [[NSMutableAttributedString alloc]initWithString:@"" attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont systemFontOfSize:fontSize]}]
+//---
+#define fc_attriAttachment(attachment) [NSAttributedString attributedStringWithAttachment:attachment]
+#define fc_mAttriAttachment(attachment) [NSMutableAttributedString attributedStringWithAttachment:attachment]
+//---
+#define fc_attri(str, color, fontSize) [[NSAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont systemFontOfSize:fontSize]}]
+#define fc_attriBold(str, color, fontSize) [[NSAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont boldSystemFontOfSize:fontSize]}]
+#define fc_attriUnderLine(str, color, fontSize) [[NSAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont systemFontOfSize:fontSize],NSUnderlineStyleAttributeName : @1}]
+#define fc_attriStrikethrough(str, color, fontSize) [[NSAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont systemFontOfSize:fontSize],NSStrikethroughStyleAttributeName : @1}]
 
 #define fc_mAttriUnderLine(str, color, fontSize) [[NSMutableAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont systemFontOfSize:fontSize],NSUnderlineStyleAttributeName : @1}]
 

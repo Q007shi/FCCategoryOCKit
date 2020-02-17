@@ -33,6 +33,7 @@ typedef struct Person FCPerson;
     //71bb1263090e5e2f60078902592d6879
     NSLog(@"%@",@"FCCategory".fc_md5);
     NSLog(@"%@",@"YYText".fc_md5);
+    NSLog(@"%@",@"YYText".fc_toArray);
     
     
     FCPerson person = {@"张三",100};
