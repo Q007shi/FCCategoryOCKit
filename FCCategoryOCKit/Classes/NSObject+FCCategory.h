@@ -13,5 +13,7 @@
 /** 判断当前对象是否是 nil 或 NSNull */
 @property (nonatomic, assign, readonly) BOOL fc_isNilOrNull;
 
+- (instancetype)init:(void(^)(NSObject *obj))block;
+
 @end
 

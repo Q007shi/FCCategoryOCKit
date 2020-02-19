@@ -17,6 +17,8 @@
 #define fc_attriUnderLine(str, color, fontSize) [[NSAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont systemFontOfSize:fontSize],NSUnderlineStyleAttributeName : @1}]
 #define fc_attriStrikethrough(str, color, fontSize) [[NSAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont systemFontOfSize:fontSize],NSStrikethroughStyleAttributeName : @1}]
 
+//---
+#define fc_mAttri(str, color, fontSize) [[NSMutableAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont systemFontOfSize:fontSize]}]
 #define fc_mAttriUnderLine(str, color, fontSize) [[NSMutableAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont systemFontOfSize:fontSize],NSUnderlineStyleAttributeName : @1}]
 
 #define fc_mAttriStrikethrough(str, color, fontSize) [[NSMutableAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont systemFontOfSize:fontSize],NSStrikethroughStyleAttributeName : @1}]

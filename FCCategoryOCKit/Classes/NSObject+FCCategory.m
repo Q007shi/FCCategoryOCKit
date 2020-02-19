@@ -30,4 +30,13 @@
     return (self == nil || [self isKindOfClass:NSNull.class]);
 }
 
+- (instancetype)init:(void (^)(NSObject *))block{
+    if ([self init]) {
+        if (block) {
+            block(self);
+        }
+    }
+    return self;
+}
+
 @end
