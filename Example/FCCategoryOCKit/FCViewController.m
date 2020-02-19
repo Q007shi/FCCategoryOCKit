@@ -7,7 +7,7 @@
 //
 
 #import "FCViewController.h"
-#import <FCCategoryOCKit/FCStringCategoryHeader.h>
+#import <FCCategoryOCKit/FCCategoryOCKit.h>
 
 typedef NS_ENUM(NSInteger,Weak){
     SunDay,
@@ -42,6 +42,12 @@ typedef struct Person FCPerson;
     person.name = @"123";
     p.name = @"1234";
     NSLog(@"%@",p.name);
+    
+    
+    fc_attri(@"", UIColor.redColor, 12);
+    NSMutableAttributedString *mAttri = fc_mAttriUnderLine(@"aa",UIColor.orangeColor, 1);
+    [mAttri appendAttributedString:fc_attri(@"1", UIColor.orangeColor, 14)];
+    NSLog(@"%@",mAttri.string);
 }
 
 - (NSString *)description{

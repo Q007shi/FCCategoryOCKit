@@ -10,7 +10,7 @@
 
 //---
 #define fc_attriAttachment(attachment) [NSAttributedString attributedStringWithAttachment:attachment]
-#define fc_mAttriAttachment(attachment) [NSMutableAttributedString alloc]initWithAttributedString:[NSAttributedString attributedStringWithAttachment:attachment];
+#define fc_mAttriAttachment(attachment) [[NSMutableAttributedString alloc]initWithAttributedString:fc_attriAttachment(attachment)]
 //---
 #define fc_attri(str, color, fontSize) [[NSAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont systemFontOfSize:fontSize]}]
 #define fc_attriBold(str, color, fontSize) [[NSAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont boldSystemFontOfSize:fontSize]}]

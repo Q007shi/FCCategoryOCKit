@@ -31,12 +31,11 @@
 }
 
 - (instancetype)init:(void (^)(NSObject *))block{
-    if ([self init]) {
-        if (block) {
-            block(self);
-        }
+    NSObject *obj = [self init];
+    if (block) {
+        block(obj);
     }
-    return self;
+    return obj;
 }
 
 @end
