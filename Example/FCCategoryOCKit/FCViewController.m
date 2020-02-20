@@ -42,7 +42,6 @@ typedef struct Person FCPerson;
     person.name = @"123";
     p.name = @"1234";
     NSLog(@"%@",p.name);
-    
 }
 
 - (NSString *)description{
