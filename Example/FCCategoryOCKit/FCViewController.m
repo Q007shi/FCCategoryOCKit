@@ -8,6 +8,7 @@
 
 #import "FCViewController.h"
 #import <FCCategoryOCKit/FCCategoryOCKit.h>
+#import "FCTestModel.h"
 
 typedef NS_ENUM(NSInteger,Weak){
     SunDay,
@@ -42,6 +43,10 @@ typedef struct Person FCPerson;
     person.name = @"123";
     p.name = @"1234";
     NSLog(@"%@",p.name);
+    
+    FCTestModel *m = [[FCTestModel alloc]init:^(FCTestModel *model) {
+        model.name = @"";
+    }];
 }
 
 - (NSString *)description{

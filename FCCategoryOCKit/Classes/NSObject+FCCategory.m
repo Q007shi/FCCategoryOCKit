@@ -30,8 +30,8 @@
     return (self == nil || [self isKindOfClass:NSNull.class]);
 }
 
-- (instancetype)init:(void (^)(NSObject *))block{
-    NSObject *obj = [self init];
+- (instancetype)init:(void (^)(id))block{
+    id obj = [self init];
     if (block) {
         block(obj);
     }
