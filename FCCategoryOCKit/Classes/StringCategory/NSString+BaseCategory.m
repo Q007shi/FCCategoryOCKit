@@ -24,6 +24,12 @@
     return [self stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceCharacterSet];
 }
 
+- (NSString *)fc_whitespaceAndNewlineCharacter{
+    if (self.fc_isEmpty) return nil;
+    //
+    return [self stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet];
+}
+
 - (NSArray *)fc_toArray{
     NSMutableArray *arr = NSMutableArray.array;
     if (!self.fc_isEmpty) {

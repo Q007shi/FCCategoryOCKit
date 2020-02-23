@@ -25,9 +25,11 @@
 @property (nonatomic, assign, readonly) BOOL fc_isEmpty;
 /** 剔除字符串收尾空格，如果为 nil 就返回 nil  */
 @property(nonatomic,copy, readonly)NSString * _Nullable fc_trimmingWhitespaceCharacter;
+/** 剔除字符串收尾空格和换行符，如果为 nil 就返回 nil  */
+@property(nonatomic,copy, readonly)NSString * _Nullable fc_whitespaceAndNewlineCharacter;
 
 /** 字符串转数组  “ABC” -> ["a","b","c"]*/
-@property(nonatomic,strong)NSArray *fc_toArray;
+@property(nonatomic,strong, readonly)NSArray * _Nullable fc_toArray;
 
 #pragma mark - 方法
 

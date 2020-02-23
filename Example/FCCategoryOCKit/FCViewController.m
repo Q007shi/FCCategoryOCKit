@@ -44,9 +44,11 @@ typedef struct Person FCPerson;
     p.name = @"1234";
     NSLog(@"%@",p.name);
     
-    FCTestModel *m = [[FCTestModel alloc]init:^(FCTestModel *model) {
-        model.name = @"";
-    }];
+    
+    NSLog(@"-----------");
+    NSLog(@"------%@-----",@"\n 0000 ".fc_whitespaceAndNewlineCharacter);
+    NSLog(@"-----------");
+    
 }
 
 - (NSString *)description{
