@@ -23,7 +23,7 @@
  @param regex 正则表达式
  @return 匹配结果
  */
-- (BOOL)fc_evaluateWithRegex:(nonnull NSString *)regex;
+- (BOOL)fc_matchesWithRegex:(nonnull NSString *)regex;
 
 @end
 

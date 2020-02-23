@@ -26,7 +26,7 @@
 }
 
 //对当前字符，根据正则表达式 regex 进行匹配
-- (BOOL)fc_evaluateWithRegex:(nonnull NSString *)regex{
+- (BOOL)fc_matchesWithRegex:(nonnull NSString *)regex{
     if (self.fc_isEmpty || regex.fc_isEmpty) {
         return NO;
     }

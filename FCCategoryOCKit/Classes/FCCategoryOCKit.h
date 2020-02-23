@@ -37,5 +37,7 @@
 #import "UIView+FrameCategory.h"
 #import "UIButton+FCCategory.h"
 #import "UIColor+TransformCategory.h"
+#import "UITextField+FCCategory.h"
+#import "UITextView+FCCategory.h"
 
 #endif /* FCCategoryOCKit_h */

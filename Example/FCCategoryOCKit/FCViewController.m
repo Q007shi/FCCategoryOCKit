@@ -49,6 +49,13 @@ typedef struct Person FCPerson;
     NSLog(@"------%@-----",@"\n 0000 ".fc_whitespaceAndNewlineCharacter);
     NSLog(@"-----------");
     
+    UITextView *textF = [[UITextView alloc]initWithFrame:CGRectMake(100, 100, 200, 40)];
+    textF.backgroundColor = UIColor.lightGrayColor;
+    textF.fc_maxLength = 10;
+    [self.view addSubview:textF];
+    
+    textF.attributedText = fc_attri(@"9999", UIColor.redColor, 20);
+    
 }
 
 - (NSString *)description{

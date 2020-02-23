@@ -19,13 +19,13 @@
 }
 
 - (NSString *)fc_trimmingWhitespaceCharacter{
-    if (self.fc_isEmpty) return nil;
+    if (self.fc_isEmpty) return @"";
     //
     return [self stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceCharacterSet];
 }
 
 - (NSString *)fc_whitespaceAndNewlineCharacter{
-    if (self.fc_isEmpty) return nil;
+    if (self.fc_isEmpty) return @"";
     //
     return [self stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet];
 }
@@ -45,7 +45,7 @@
 
 /** 剔除指定字符串，如果为 nil 就返回 nil */
 - (instancetype)fc_trimmingCustomCharacter:(NSString *)trimmingString{
-    if (self.fc_isEmpty) return nil;
+    if (self.fc_isEmpty) return @"";
     if (trimmingString.fc_isEmpty) return self;
     //
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:trimmingString]];

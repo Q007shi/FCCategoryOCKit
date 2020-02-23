@@ -78,7 +78,7 @@
 + (instancetype)fc_hexValueString:(NSString *)hexValueString{
     if (hexValueString.fc_isEmpty || ![hexValueString isKindOfClass:NSString.class]) return UIColor.clearColor;
     //
-    if([hexValueString fc_evaluateWithRegex:@"^(0x|#)(([a-zA-Z0-9]{3})|([a-zA-Z0-9]{4})|([a-zA-Z0-9]{6})|([a-zA-Z0-9]{8}))"]){
+    if([hexValueString fc_matchesWithRegex:@"^(0x|#)(([a-zA-Z0-9]{3})|([a-zA-Z0-9]{4})|([a-zA-Z0-9]{6})|([a-zA-Z0-9]{8}))"]){
         if([hexValueString hasPrefix:@"0x"]){
             hexValueString = [hexValueString stringByReplacingOccurrencesOfString:@"0x" withString:@""];
             return [self _matchColorWithHexValueString:hexValueString];
@@ -86,7 +86,7 @@
             hexValueString = [hexValueString stringByReplacingOccurrencesOfString:@"#" withString:@""];
             return [self _matchColorWithHexValueString:hexValueString];
         }
-    }else if([hexValueString fc_evaluateWithRegex:@"([a-zA-Z0-9]{3})|([a-zA-Z0-9]{4})|([a-zA-Z0-9]{6})|([a-zA-Z0-9]{8})"]){
+    }else if([hexValueString fc_matchesWithRegex:@"([a-zA-Z0-9]{3})|([a-zA-Z0-9]{4})|([a-zA-Z0-9]{6})|([a-zA-Z0-9]{8})"]){
         return [self _matchColorWithHexValueString:hexValueString];
     }
     
@@ -97,7 +97,7 @@
     if (hexValueString.fc_isEmpty || ![hexValueString isKindOfClass:NSString.class]) return UIColor.clearColor;
     //
     alpha = MIN(1, alpha);
-    if([hexValueString fc_evaluateWithRegex:@"^(0x|#)(([a-zA-Z0-9]{3})|([a-zA-Z0-9]{6}))"]){
+    if([hexValueString fc_matchesWithRegex:@"^(0x|#)(([a-zA-Z0-9]{3})|([a-zA-Z0-9]{6}))"]){
         if([hexValueString hasPrefix:@"0x"]){
             hexValueString = [hexValueString stringByReplacingOccurrencesOfString:@"0x" withString:@""];
             struct RGBA rgb = [[self _matchColorWithHexValueString:hexValueString] fc_rgba];
@@ -107,7 +107,7 @@
             struct RGBA rgb = [[self _matchColorWithHexValueString:hexValueString] fc_rgba];
             return [UIColor colorWithRed:rgb.R green:rgb.G blue:rgb.B alpha:alpha];
         }
-    }else if([hexValueString fc_evaluateWithRegex:@"([a-zA-Z0-9]{3})|([a-zA-Z0-9]{6})"]){
+    }else if([hexValueString fc_matchesWithRegex:@"([a-zA-Z0-9]{3})|([a-zA-Z0-9]{6})"]){
         struct RGBA rgb = [[self _matchColorWithHexValueString:hexValueString] fc_rgba];
         return [UIColor colorWithRed:rgb.R green:rgb.G blue:rgb.B alpha:alpha];
     }
