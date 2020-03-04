@@ -49,12 +49,21 @@ typedef struct Person FCPerson;
     NSLog(@"------%@-----",@"\n 0000 ".fc_whitespaceAndNewlineCharacter);
     NSLog(@"-----------");
     
-    UITextView *textF = [[UITextView alloc]initWithFrame:CGRectMake(100, 100, 200, 40)];
-    textF.backgroundColor = UIColor.lightGrayColor;
-    textF.fc_maxLength = 10;
-    [self.view addSubview:textF];
+//    UITextView *textF = [[UITextView alloc]initWithFrame:CGRectMake(100, 100, 200, 40)];
+//    textF.backgroundColor = UIColor.lightGrayColor;
+//    textF.fc_maxLength = 10;
+//    [self.view addSubview:textF];
+//
+//    textF.attributedText = fc_attri(@"9999", UIColor.redColor, 20);
     
-    textF.attributedText = fc_attri(@"9999", UIColor.redColor, 20);
+    UIImageView *im = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    im.contentMode = UIViewContentModeScaleAspectFit;
+    [self.view addSubview:im];
+    im.backgroundColor = UIColor.lightGrayColor;
+    im.image = [UIColor.yellowColor fc_imageWithSize:CGSizeMake(100, 20)];
+    
+    NSDate *date = NSDate.date;
+    NSLog(@"%@",[date fc_stringWithFormat:@"YYYY-MM-dd HH:mm:ss"]);
     
 }
 

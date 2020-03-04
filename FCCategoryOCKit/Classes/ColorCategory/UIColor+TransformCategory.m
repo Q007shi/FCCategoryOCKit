@@ -57,12 +57,60 @@
     //tile,平铺样式；stretch，拉伸样式
     return [image resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 10, 10) resizingMode:UIImageResizingModeStretch];
 }
+//将当前颜色转换成 0.5X0.5的可拉伸图片
+- (UIImage *)fc_lineImage{
+    if (self.fc_isNilOrNull || ![self isKindOfClass:UIColor.class]) return nil;
+    //
+    //图片尺寸
+    CGRect rect = CGRectMake(0, 0, 1, 1);
+    //填充画笔
+    UIGraphicsBeginImageContext(rect.size);
+    //根据所传颜色绘制
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, self ? self.CGColor : UIColor.clearColor.CGColor);
+    //显示区域
+    CGContextFillRect(context, rect);
+    // 得到图片信息
+    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+    //消除画笔
+    UIGraphicsEndImageContext();
+    //automatic(默认渲染模式),根据上下文渲染;alwaysOriginal, 根据颜色本身渲染；alwaysTemplate，根据 tintColor 渲染
+    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    //tile,平铺样式；stretch，拉伸样式
+    return [image resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0.5, 0.5) resizingMode:UIImageResizingModeStretch];
+}
+
 //获取一个随机色
 + (UIColor *)fc_randomColor{
     return [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
 }
 
 #pragma mark - 方法
+
+/**
+ 根据指定宽高生成图片，最小{1,1}
+ */
+- (UIImage *)fc_imageWithSize:(CGSize)size{
+    if (self.fc_isNilOrNull || ![self isKindOfClass:UIColor.class]) return nil;
+       //
+       //图片尺寸
+       CGRect rect = CGRectMake(0, 0, size.width, size.height);
+       //填充画笔
+       UIGraphicsBeginImageContext(rect.size);
+       //根据所传颜色绘制
+       CGContextRef context = UIGraphicsGetCurrentContext();
+       CGContextSetFillColorWithColor(context, self ? self.CGColor : UIColor.clearColor.CGColor);
+       //显示区域
+       CGContextFillRect(context, rect);
+       // 得到图片信息
+       UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+       //消除画笔
+       UIGraphicsEndImageContext();
+       //automatic(默认渲染模式),根据上下文渲染;alwaysOriginal, 根据颜色本身渲染；alwaysTemplate，根据 tintColor 渲染
+       image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+       //tile,平铺样式；stretch，拉伸样式
+       return [image resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, size.width * 0.5, size.height * 0.5) resizingMode:UIImageResizingModeStretch];
+}
 
 /** 0xRRGGBB 转 Color */
 + (instancetype)fc_RGBValue:(UInt32)RGBValue{

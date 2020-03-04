@@ -7,32 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0802C7850A4A47ADAE6B4941BE9B88DC /* UITextView+FCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C6274859FFDE894608174AEF53ADAF07 /* UITextView+FCCategory.m */; };
-		1B802C4B0AEAA4F9DB5AED6AC85AD9C7 /* UIView+FrameCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 48F5DF3D35515ECDD13A1D45CFA21961 /* UIView+FrameCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DC4592F4E264A615630463B6345E6CC /* UIColor+TransformCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E50BB09BB64E359CDE77C49454A7753 /* UIColor+TransformCategory.m */; };
-		20C8DA7FAB7DC65F816F8641835175CB /* NSString+EncryptionCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = D6A3A049710C9F167CCDF56154311174 /* NSString+EncryptionCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35FD381B97F8A2C79D97EA085A0E84D8 /* FCCategoryOCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B85A4312CEF5878752E0DC794BC0F8D /* FCCategoryOCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37ECFF72D7E2F63710E4868454C3E32A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		3B187A06EC0E27E69D8971C88966E2F1 /* NSString+BaseCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 570906D8D82C015EC693CAF25BFC9D21 /* NSString+BaseCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46DCBB6EFA7A44C34104A92CC552754C /* UIButton+FCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAE2A9729C8248D281693C3C69FBCB7 /* UIButton+FCCategory.m */; };
-		48B8989FB8663D9775369040FDDCF7FE /* UITextField+FCCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CADB9621EFEAEA82A9B4221BD08B1A2 /* UITextField+FCCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FE9EAC2A8C3E2C26E406F297E09C288 /* NSString+RegexCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F460F3D061935ABF44FB223858ECE9EC /* NSString+RegexCategory.m */; };
+		106B83BE34A38F26948DB2993565D75D /* UITextField+FCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB8E806B43CCC715D2F393333DF5874 /* UITextField+FCCategory.m */; };
+		126AA6FBCFB0146C1A27F7D47F5BD092 /* NSString+EncryptionCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 419CEB4003D7A8547BB4A2B106E25FCB /* NSString+EncryptionCategory.m */; };
+		1CB48714BB090F2BC5528D3AC54AA611 /* NSDate+FCCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 44858436C628AC091DAEB9CDA070AA39 /* NSDate+FCCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27A08C60D74C7BA9BE37F9CE916DD98D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		299656879FD86F7CB6302B569C924B07 /* NSObject+FCCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 617D18365F397024D4164924023800FF /* NSObject+FCCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A8A0462ECBA40D0B4D2BB78BCE3A525 /* UITextView+FCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D35B7926F521B64D43E1EED9C1C9F5 /* UITextView+FCCategory.m */; };
+		2D4CFF6B7438962ABBF1AAE8B3BE379F /* NSString+RegexCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D8C9E309E1007AB84172960A480008 /* NSString+RegexCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		324FB90A81CE7BEA4AE3C000C5BA15D7 /* UIColor+TransformCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 631719AA136DFA3137E6F510F472A6DD /* UIColor+TransformCategory.m */; };
+		37A050DAE172D8438709F1CE315A4AAA /* NSString+BaseCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 46450E672024B8BD789E38DC70873914 /* NSString+BaseCategory.m */; };
+		3E49569D9BB6A15B1D8689CAA46A4856 /* UITextView+FCCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B4824355D222831468A10DD02C6D01E /* UITextView+FCCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51F207E9B9A216EE65EA2CA8C785C18B /* Pods-FCCategoryOCKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28247FB30441189274D6264A2D00DF32 /* Pods-FCCategoryOCKit_Example-dummy.m */; };
-		5F07859C4194ABD63E1CFF681844B853 /* NSString+RegexCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 424F70D4D8F6BEFFDC471D4CF5A7A678 /* NSString+RegexCategory.m */; };
-		65218DE22C77E1DEE0CE2D47FBABABA4 /* NSString+RegexCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D4B2238B3C8897807596046ED0E7211 /* NSString+RegexCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86C6053C2DF49BC6B396B5E90A96BB19 /* FCStringCategoryHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 299063D5AA17BE4BA2B9069BBFD7FEC5 /* FCStringCategoryHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63E040F5FD09CF3BF0F601129360401A /* UIButton+FCCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CC9CF4C5D8CC3AC8A4BBF4C3F539CB9 /* UIButton+FCCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A719155EC2DB4BCA32A5E65D2FD650B /* UIView+FrameCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 61BBD3BEFA445D6BBDAA75FBF870A56E /* UIView+FrameCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8392ED7A80B7FFC387508CFFDEE4E502 /* FCCategoryOCKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD7CBCD007BE8CDDD67383CB1A87B93 /* FCCategoryOCKit-dummy.m */; };
+		87952B44A26A8AE155181B604681C537 /* UIView+FrameCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3682C2079D253CB27B95E8311EF0F1 /* UIView+FrameCategory.m */; };
 		87BD77BA259199B319415D6A5E4B6E7E /* Pods-FCCategoryOCKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C14CFB9CCEB6A19151703C25848723 /* Pods-FCCategoryOCKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		897DC830F73C9C2C963310925E8F2070 /* UITextField+FCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 943B94BA9A11AA04A47AE6902BE55BC9 /* UITextField+FCCategory.m */; };
+		8A153B98D5CBD00CE6B60B5A159EFD66 /* UIButton+FCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B744C736F8A668154A02AEBF10D7DB3 /* UIButton+FCCategory.m */; };
+		8A85DEAE2835A9412AB6636CD4CF6ABA /* NSString+BaseCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = BDAB5CCA48D202EDE9090B51663A33E5 /* NSString+BaseCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D8E81698423E3C16974A6E4803772DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		9D30FFAB170E7F5863E669582A9C5566 /* FCCategoryOCKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7204E0319BE688D486255FE8704DA17 /* FCCategoryOCKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9FF329F19936C3323E7D2BD02369817B /* FCCategoryOCKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F2C98966A3282173111BFB83BA74F /* FCCategoryOCKit-dummy.m */; };
-		A202BA61C3C861A4119C15F755CC9060 /* NSString+BaseCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E71D59BA3949469AC47B156566C81 /* NSString+BaseCategory.m */; };
-		A236BF44CA4D2948B5040397BD1F8590 /* UIColor+TransformCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CCCC15C1431053C62EEB186539610B /* UIColor+TransformCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A31A61A6E0D30DB0D79BD1B2602AA58D /* UITextView+FCCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC721D6B31CF0352E9760E788DDF9F9 /* UITextView+FCCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF6C7A9A678BB0DBD2395FB295FCDFD6 /* NSObject+FCCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 773A0A73B2B24244F660CCB095D69E78 /* NSObject+FCCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5737EAE8BD7F8D0B15DB1FA90809570 /* UIButton+FCCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 694903BBCF7FBEF0B74BBB706C747D4C /* UIButton+FCCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE6F54D0E28166B6F8846B59B2636406 /* NSObject+FCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BE43D70AE71E2C1E4834C1D330037A /* NSObject+FCCategory.m */; };
-		BF6EFDEA68EF4972D366898D2A38F13B /* NSString+EncryptionCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D8719B5A844657F5A1553E8D17F8EFDF /* NSString+EncryptionCategory.m */; };
-		C06ED47F9B2F4B05DA0F7C36AC5E6A1C /* UIView+FrameCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7B34B1416982862F2F7C56F76CE8A /* UIView+FrameCategory.m */; };
+		9DE532C7CD093CF60493E8D535711233 /* FCStringCategoryHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B63F3788C8017751297B095878CAB023 /* FCStringCategoryHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A21C44147CA177D83D675590C8F21DF1 /* FCCategoryOCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 29CE560829CD4D8060727D5164599662 /* FCCategoryOCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A22A1F1AD299B1419AA857CCCDD6CEB9 /* UITextField+FCCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5988369670993BC56CCCB252BE4B9E53 /* UITextField+FCCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9CA98B15252C8D9880135A445DAF5DB /* NSObject+FCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E520D94242D8B464F5F71CDDDCC09C /* NSObject+FCCategory.m */; };
+		E147658122D8C2A4DD7F9ADE158AA5FD /* FCCategoryOCKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E929B951DE0C37B7AB980753B1CA9E83 /* FCCategoryOCKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE64E02D272569CDA76482C080B565CF /* NSDate+FCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F3337B4FF82EBDA58D4D9699A8FEA /* NSDate+FCCategory.m */; };
+		F777A9621E737C26168B09FFA29E0468 /* NSString+EncryptionCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = A71A622B70E9979EA0143EDE6E8727CB /* NSString+EncryptionCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFD275207E1A8BD68AE89CD6D066C356 /* UIColor+TransformCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = D8AC33807F6A53F9C66E009996FCB441 /* UIColor+TransformCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,56 +48,58 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00523C13D7F417732EF05520641A1966 /* FCCategoryOCKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FCCategoryOCKit.xcconfig; sourceTree = "<group>"; };
+		05C1A19B7B54A5BC8525B67BBDD51750 /* FCCategoryOCKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FCCategoryOCKit-prefix.pch"; sourceTree = "<group>"; };
 		27373977CE5E8BDA9E33361FCABBB4FA /* Pods-FCCategoryOCKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FCCategoryOCKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		28247FB30441189274D6264A2D00DF32 /* Pods-FCCategoryOCKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FCCategoryOCKit_Example-dummy.m"; sourceTree = "<group>"; };
-		299063D5AA17BE4BA2B9069BBFD7FEC5 /* FCStringCategoryHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FCStringCategoryHeader.h; sourceTree = "<group>"; };
+		29CE560829CD4D8060727D5164599662 /* FCCategoryOCKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FCCategoryOCKit.h; path = FCCategoryOCKit/Classes/FCCategoryOCKit.h; sourceTree = "<group>"; };
 		2BF8BFD974D5487BC846CCAF2A542149 /* Pods-FCCategoryOCKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FCCategoryOCKit_Example-Info.plist"; sourceTree = "<group>"; };
-		2C3E71D59BA3949469AC47B156566C81 /* NSString+BaseCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+BaseCategory.m"; sourceTree = "<group>"; };
 		31C14CFB9CCEB6A19151703C25848723 /* Pods-FCCategoryOCKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FCCategoryOCKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3891A802797AF70422AA42D4D9040EE5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		3C6A13116C8BC3FF900CF3AEACFC6E73 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		3CADB9621EFEAEA82A9B4221BD08B1A2 /* UITextField+FCCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+FCCategory.h"; sourceTree = "<group>"; };
-		424F70D4D8F6BEFFDC471D4CF5A7A678 /* NSString+RegexCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegexCategory.m"; sourceTree = "<group>"; };
-		430671AFFA130207F3742F6B60FC8FD0 /* FCCategoryOCKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FCCategoryOCKit-Info.plist"; sourceTree = "<group>"; };
-		48F5DF3D35515ECDD13A1D45CFA21961 /* UIView+FrameCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameCategory.h"; sourceTree = "<group>"; };
+		3B744C736F8A668154A02AEBF10D7DB3 /* UIButton+FCCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FCCategory.m"; sourceTree = "<group>"; };
+		419CEB4003D7A8547BB4A2B106E25FCB /* NSString+EncryptionCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+EncryptionCategory.m"; sourceTree = "<group>"; };
+		44858436C628AC091DAEB9CDA070AA39 /* NSDate+FCCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+FCCategory.h"; sourceTree = "<group>"; };
+		46450E672024B8BD789E38DC70873914 /* NSString+BaseCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+BaseCategory.m"; sourceTree = "<group>"; };
 		49500CC161DB5B9DEC71AA53D6FB3879 /* Pods-FCCategoryOCKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FCCategoryOCKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4D4B2238B3C8897807596046ED0E7211 /* NSString+RegexCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+RegexCategory.h"; sourceTree = "<group>"; };
-		4E50BB09BB64E359CDE77C49454A7753 /* UIColor+TransformCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TransformCategory.m"; sourceTree = "<group>"; };
+		4AB8E806B43CCC715D2F393333DF5874 /* UITextField+FCCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+FCCategory.m"; sourceTree = "<group>"; };
 		52F5A5E468332A80737811FDD8BD7C6F /* Pods-FCCategoryOCKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FCCategoryOCKit_Example.modulemap"; sourceTree = "<group>"; };
-		53710FA5E58A15F593DEA8102DF9C744 /* FCCategoryOCKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FCCategoryOCKit-prefix.pch"; sourceTree = "<group>"; };
 		548D55EC772DDEE60C5FDB4CECFD8E91 /* Pods-FCCategoryOCKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FCCategoryOCKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		570906D8D82C015EC693CAF25BFC9D21 /* NSString+BaseCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+BaseCategory.h"; sourceTree = "<group>"; };
-		57CCCC15C1431053C62EEB186539610B /* UIColor+TransformCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+TransformCategory.h"; sourceTree = "<group>"; };
+		57EE285E849D2EE2CE10F4F08BA74389 /* FCCategoryOCKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FCCategoryOCKit-Info.plist"; sourceTree = "<group>"; };
+		58E520D94242D8B464F5F71CDDDCC09C /* NSObject+FCCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+FCCategory.m"; path = "FCCategoryOCKit/Classes/NSObject+FCCategory.m"; sourceTree = "<group>"; };
+		5988369670993BC56CCCB252BE4B9E53 /* UITextField+FCCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+FCCategory.h"; sourceTree = "<group>"; };
 		5C18B110B24D788E30CB47FD3356EB2E /* Pods-FCCategoryOCKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FCCategoryOCKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		602F2C98966A3282173111BFB83BA74F /* FCCategoryOCKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FCCategoryOCKit-dummy.m"; sourceTree = "<group>"; };
-		694903BBCF7FBEF0B74BBB706C747D4C /* UIButton+FCCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+FCCategory.h"; sourceTree = "<group>"; };
-		6B85A4312CEF5878752E0DC794BC0F8D /* FCCategoryOCKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FCCategoryOCKit.h; path = FCCategoryOCKit/Classes/FCCategoryOCKit.h; sourceTree = "<group>"; };
-		6BC7B34B1416982862F2F7C56F76CE8A /* UIView+FrameCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameCategory.m"; sourceTree = "<group>"; };
-		773A0A73B2B24244F660CCB095D69E78 /* NSObject+FCCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+FCCategory.h"; path = "FCCategoryOCKit/Classes/NSObject+FCCategory.h"; sourceTree = "<group>"; };
-		7E1B08E60429BAFAFEABA4CF82E0B60D /* FCCategoryOCKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FCCategoryOCKit.xcconfig; sourceTree = "<group>"; };
-		80BE43D70AE71E2C1E4834C1D330037A /* NSObject+FCCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+FCCategory.m"; path = "FCCategoryOCKit/Classes/NSObject+FCCategory.m"; sourceTree = "<group>"; };
+		617D18365F397024D4164924023800FF /* NSObject+FCCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+FCCategory.h"; path = "FCCategoryOCKit/Classes/NSObject+FCCategory.h"; sourceTree = "<group>"; };
+		61BBD3BEFA445D6BBDAA75FBF870A56E /* UIView+FrameCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameCategory.h"; sourceTree = "<group>"; };
+		631719AA136DFA3137E6F510F472A6DD /* UIColor+TransformCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TransformCategory.m"; sourceTree = "<group>"; };
+		6B4824355D222831468A10DD02C6D01E /* UITextView+FCCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextView+FCCategory.h"; sourceTree = "<group>"; };
+		7B3682C2079D253CB27B95E8311EF0F1 /* UIView+FrameCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameCategory.m"; sourceTree = "<group>"; };
+		88D35B7926F521B64D43E1EED9C1C9F5 /* UITextView+FCCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextView+FCCategory.m"; sourceTree = "<group>"; };
+		89FD70104205685170B3B5A7E7FF8E74 /* FCCategoryOCKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FCCategoryOCKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8CC9CF4C5D8CC3AC8A4BBF4C3F539CB9 /* UIButton+FCCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+FCCategory.h"; sourceTree = "<group>"; };
+		8D695C6CC12C43A89BB86E2F42D18B04 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		91757A3C6A66C87D202CA63AE27F8FFB /* Pods_FCCategoryOCKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FCCategoryOCKit_Example.framework; path = "Pods-FCCategoryOCKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		943B94BA9A11AA04A47AE6902BE55BC9 /* UITextField+FCCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+FCCategory.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A7204E0319BE688D486255FE8704DA17 /* FCCategoryOCKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FCCategoryOCKit-umbrella.h"; sourceTree = "<group>"; };
-		BDAE2A9729C8248D281693C3C69FBCB7 /* UIButton+FCCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FCCategory.m"; sourceTree = "<group>"; };
-		C6274859FFDE894608174AEF53ADAF07 /* UITextView+FCCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextView+FCCategory.m"; sourceTree = "<group>"; };
+		A71A622B70E9979EA0143EDE6E8727CB /* NSString+EncryptionCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+EncryptionCategory.h"; sourceTree = "<group>"; };
+		B49EBFC1D495825528B110A20FD7781C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B63F3788C8017751297B095878CAB023 /* FCStringCategoryHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FCStringCategoryHeader.h; sourceTree = "<group>"; };
+		BDAB5CCA48D202EDE9090B51663A33E5 /* NSString+BaseCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+BaseCategory.h"; sourceTree = "<group>"; };
+		BFD7CBCD007BE8CDDD67383CB1A87B93 /* FCCategoryOCKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FCCategoryOCKit-dummy.m"; sourceTree = "<group>"; };
+		C9D8C9E309E1007AB84172960A480008 /* NSString+RegexCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+RegexCategory.h"; sourceTree = "<group>"; };
 		CC8B8ABCB88B52F4A6921616F94351D7 /* FCCategoryOCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FCCategoryOCKit.framework; path = FCCategoryOCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDCCABC4D6710CFDAA6ED900FA040942 /* FCCategoryOCKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FCCategoryOCKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D6A3A049710C9F167CCDF56154311174 /* NSString+EncryptionCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+EncryptionCategory.h"; sourceTree = "<group>"; };
-		D8719B5A844657F5A1553E8D17F8EFDF /* NSString+EncryptionCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+EncryptionCategory.m"; sourceTree = "<group>"; };
-		EAC721D6B31CF0352E9760E788DDF9F9 /* UITextView+FCCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextView+FCCategory.h"; sourceTree = "<group>"; };
+		D8AC33807F6A53F9C66E009996FCB441 /* UIColor+TransformCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+TransformCategory.h"; sourceTree = "<group>"; };
+		D918EF19950AD6FBA61AA82C5A68AE66 /* FCCategoryOCKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FCCategoryOCKit.modulemap; sourceTree = "<group>"; };
+		E47F3337B4FF82EBDA58D4D9699A8FEA /* NSDate+FCCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FCCategory.m"; sourceTree = "<group>"; };
+		E929B951DE0C37B7AB980753B1CA9E83 /* FCCategoryOCKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FCCategoryOCKit-umbrella.h"; sourceTree = "<group>"; };
 		ED6C0E130E8C27BF012C4752B3D660B8 /* Pods-FCCategoryOCKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FCCategoryOCKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F26AF6DF6EA9FDE242223DF21D5ED729 /* FCCategoryOCKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FCCategoryOCKit.modulemap; sourceTree = "<group>"; };
+		F460F3D061935ABF44FB223858ECE9EC /* NSString+RegexCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegexCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B118595DEE88607A5D5140C9996C6524 /* Frameworks */ = {
+		35C3CFC2DA26598D1BC888C44CC33575 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37ECFF72D7E2F63710E4868454C3E32A /* Foundation.framework in Frameworks */,
+				27A08C60D74C7BA9BE37F9CE916DD98D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,105 +114,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		61120E6BE86962C2960165B9417D4EBF /* Support Files */ = {
+		047466595FB0AFB62BB72E19C7801CF1 /* TextFieldCategory */ = {
 			isa = PBXGroup;
 			children = (
-				F26AF6DF6EA9FDE242223DF21D5ED729 /* FCCategoryOCKit.modulemap */,
-				7E1B08E60429BAFAFEABA4CF82E0B60D /* FCCategoryOCKit.xcconfig */,
-				602F2C98966A3282173111BFB83BA74F /* FCCategoryOCKit-dummy.m */,
-				430671AFFA130207F3742F6B60FC8FD0 /* FCCategoryOCKit-Info.plist */,
-				53710FA5E58A15F593DEA8102DF9C744 /* FCCategoryOCKit-prefix.pch */,
-				A7204E0319BE688D486255FE8704DA17 /* FCCategoryOCKit-umbrella.h */,
+				5988369670993BC56CCCB252BE4B9E53 /* UITextField+FCCategory.h */,
+				4AB8E806B43CCC715D2F393333DF5874 /* UITextField+FCCategory.m */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/FCCategoryOCKit";
+			name = TextFieldCategory;
+			path = FCCategoryOCKit/Classes/TextFieldCategory;
 			sourceTree = "<group>";
 		};
-		676BFA7A1EB61651BE497FC0D428383B /* Pod */ = {
+		1BAFEBB77EA90D26BCA242084538656C /* TextViewCategory */ = {
 			isa = PBXGroup;
 			children = (
-				CDCCABC4D6710CFDAA6ED900FA040942 /* FCCategoryOCKit.podspec */,
-				3C6A13116C8BC3FF900CF3AEACFC6E73 /* LICENSE */,
-				3891A802797AF70422AA42D4D9040EE5 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		69FDCE8B4ACA6858AFADF96B8B924367 /* FCCategoryOCKit */ = {
-			isa = PBXGroup;
-			children = (
-				6B85A4312CEF5878752E0DC794BC0F8D /* FCCategoryOCKit.h */,
-				773A0A73B2B24244F660CCB095D69E78 /* NSObject+FCCategory.h */,
-				80BE43D70AE71E2C1E4834C1D330037A /* NSObject+FCCategory.m */,
-				8D8D20B345674679392F2E9EB51EC145 /* ButtonCategory */,
-				81A8931924C521EE5666CA7DC0D21715 /* ColorCategory */,
-				676BFA7A1EB61651BE497FC0D428383B /* Pod */,
-				EDF7A54324A989E8549CAD3C54962DE8 /* StringCategory */,
-				61120E6BE86962C2960165B9417D4EBF /* Support Files */,
-				9F131FA7D9B0F0F2254B47BF5995493B /* TextFieldCategory */,
-				6CC1FCDF2179DAA4DFD1F32B92E0DEA2 /* TextViewCategory */,
-				6ECF9CF5B4A53239A8197C1DDF42E324 /* ViewCategory */,
-			);
-			name = FCCategoryOCKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		6CC1FCDF2179DAA4DFD1F32B92E0DEA2 /* TextViewCategory */ = {
-			isa = PBXGroup;
-			children = (
-				EAC721D6B31CF0352E9760E788DDF9F9 /* UITextView+FCCategory.h */,
-				C6274859FFDE894608174AEF53ADAF07 /* UITextView+FCCategory.m */,
+				6B4824355D222831468A10DD02C6D01E /* UITextView+FCCategory.h */,
+				88D35B7926F521B64D43E1EED9C1C9F5 /* UITextView+FCCategory.m */,
 			);
 			name = TextViewCategory;
 			path = FCCategoryOCKit/Classes/TextViewCategory;
 			sourceTree = "<group>";
 		};
-		6ECF9CF5B4A53239A8197C1DDF42E324 /* ViewCategory */ = {
+		2FF1F8CD8C32168BF10E3E8D1D67D1D6 /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
-				48F5DF3D35515ECDD13A1D45CFA21961 /* UIView+FrameCategory.h */,
-				6BC7B34B1416982862F2F7C56F76CE8A /* UIView+FrameCategory.m */,
+				44858436C628AC091DAEB9CDA070AA39 /* NSDate+FCCategory.h */,
+				E47F3337B4FF82EBDA58D4D9699A8FEA /* NSDate+FCCategory.m */,
+			);
+			name = NSDate;
+			path = FCCategoryOCKit/Classes/NSDate;
+			sourceTree = "<group>";
+		};
+		6EC4994A6DD80C58B98EAE7B3322522C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D918EF19950AD6FBA61AA82C5A68AE66 /* FCCategoryOCKit.modulemap */,
+				00523C13D7F417732EF05520641A1966 /* FCCategoryOCKit.xcconfig */,
+				BFD7CBCD007BE8CDDD67383CB1A87B93 /* FCCategoryOCKit-dummy.m */,
+				57EE285E849D2EE2CE10F4F08BA74389 /* FCCategoryOCKit-Info.plist */,
+				05C1A19B7B54A5BC8525B67BBDD51750 /* FCCategoryOCKit-prefix.pch */,
+				E929B951DE0C37B7AB980753B1CA9E83 /* FCCategoryOCKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FCCategoryOCKit";
+			sourceTree = "<group>";
+		};
+		76035D19F9A2A431CD946C20D5E94F1E /* ViewCategory */ = {
+			isa = PBXGroup;
+			children = (
+				61BBD3BEFA445D6BBDAA75FBF870A56E /* UIView+FrameCategory.h */,
+				7B3682C2079D253CB27B95E8311EF0F1 /* UIView+FrameCategory.m */,
 			);
 			name = ViewCategory;
 			path = FCCategoryOCKit/Classes/ViewCategory;
 			sourceTree = "<group>";
 		};
-		81A8931924C521EE5666CA7DC0D21715 /* ColorCategory */ = {
+		A6AE37858DCDC6ECB835879FB3C3A833 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				57CCCC15C1431053C62EEB186539610B /* UIColor+TransformCategory.h */,
-				4E50BB09BB64E359CDE77C49454A7753 /* UIColor+TransformCategory.m */,
+				89FD70104205685170B3B5A7E7FF8E74 /* FCCategoryOCKit.podspec */,
+				8D695C6CC12C43A89BB86E2F42D18B04 /* LICENSE */,
+				B49EBFC1D495825528B110A20FD7781C /* README.md */,
 			);
-			name = ColorCategory;
-			path = FCCategoryOCKit/Classes/ColorCategory;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		8D8D20B345674679392F2E9EB51EC145 /* ButtonCategory */ = {
+		A6E60ED2D0BC73BB17B5941F7D5D330B /* StringCategory */ = {
 			isa = PBXGroup;
 			children = (
-				694903BBCF7FBEF0B74BBB706C747D4C /* UIButton+FCCategory.h */,
-				BDAE2A9729C8248D281693C3C69FBCB7 /* UIButton+FCCategory.m */,
+				B63F3788C8017751297B095878CAB023 /* FCStringCategoryHeader.h */,
+				BDAB5CCA48D202EDE9090B51663A33E5 /* NSString+BaseCategory.h */,
+				46450E672024B8BD789E38DC70873914 /* NSString+BaseCategory.m */,
+				A71A622B70E9979EA0143EDE6E8727CB /* NSString+EncryptionCategory.h */,
+				419CEB4003D7A8547BB4A2B106E25FCB /* NSString+EncryptionCategory.m */,
+				C9D8C9E309E1007AB84172960A480008 /* NSString+RegexCategory.h */,
+				F460F3D061935ABF44FB223858ECE9EC /* NSString+RegexCategory.m */,
 			);
-			name = ButtonCategory;
-			path = FCCategoryOCKit/Classes/ButtonCategory;
+			name = StringCategory;
+			path = FCCategoryOCKit/Classes/StringCategory;
 			sourceTree = "<group>";
 		};
-		9C5F843A7CF2ADC6FFA91F2578E16DD9 /* Development Pods */ = {
+		B24B13B1117B336856FA070BF3168C70 /* FCCategoryOCKit */ = {
 			isa = PBXGroup;
 			children = (
-				69FDCE8B4ACA6858AFADF96B8B924367 /* FCCategoryOCKit */,
+				29CE560829CD4D8060727D5164599662 /* FCCategoryOCKit.h */,
+				617D18365F397024D4164924023800FF /* NSObject+FCCategory.h */,
+				58E520D94242D8B464F5F71CDDDCC09C /* NSObject+FCCategory.m */,
+				EA9D2C05F55F998DDEB284DF2D0F6139 /* ButtonCategory */,
+				F40774408CA5BC9660C89ADE91CBC4DB /* ColorCategory */,
+				2FF1F8CD8C32168BF10E3E8D1D67D1D6 /* NSDate */,
+				A6AE37858DCDC6ECB835879FB3C3A833 /* Pod */,
+				A6E60ED2D0BC73BB17B5941F7D5D330B /* StringCategory */,
+				6EC4994A6DD80C58B98EAE7B3322522C /* Support Files */,
+				047466595FB0AFB62BB72E19C7801CF1 /* TextFieldCategory */,
+				1BAFEBB77EA90D26BCA242084538656C /* TextViewCategory */,
+				76035D19F9A2A431CD946C20D5E94F1E /* ViewCategory */,
 			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		9F131FA7D9B0F0F2254B47BF5995493B /* TextFieldCategory */ = {
-			isa = PBXGroup;
-			children = (
-				3CADB9621EFEAEA82A9B4221BD08B1A2 /* UITextField+FCCategory.h */,
-				943B94BA9A11AA04A47AE6902BE55BC9 /* UITextField+FCCategory.m */,
-			);
-			name = TextFieldCategory;
-			path = FCCategoryOCKit/Classes/TextFieldCategory;
+			name = FCCategoryOCKit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -223,7 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				9C5F843A7CF2ADC6FFA91F2578E16DD9 /* Development Pods */,
+				F77376EDEC5E72D3650CA7EE0781E7C2 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				ED453BE41CE77D21F46E2CF93447EA26 /* Products */,
 				E88FF67243DCC1217BE34B1138D6074A /* Targets Support Files */,
@@ -263,6 +265,16 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		EA9D2C05F55F998DDEB284DF2D0F6139 /* ButtonCategory */ = {
+			isa = PBXGroup;
+			children = (
+				8CC9CF4C5D8CC3AC8A4BBF4C3F539CB9 /* UIButton+FCCategory.h */,
+				3B744C736F8A668154A02AEBF10D7DB3 /* UIButton+FCCategory.m */,
+			);
+			name = ButtonCategory;
+			path = FCCategoryOCKit/Classes/ButtonCategory;
+			sourceTree = "<group>";
+		};
 		ED453BE41CE77D21F46E2CF93447EA26 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,40 +284,44 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EDF7A54324A989E8549CAD3C54962DE8 /* StringCategory */ = {
+		F40774408CA5BC9660C89ADE91CBC4DB /* ColorCategory */ = {
 			isa = PBXGroup;
 			children = (
-				299063D5AA17BE4BA2B9069BBFD7FEC5 /* FCStringCategoryHeader.h */,
-				570906D8D82C015EC693CAF25BFC9D21 /* NSString+BaseCategory.h */,
-				2C3E71D59BA3949469AC47B156566C81 /* NSString+BaseCategory.m */,
-				D6A3A049710C9F167CCDF56154311174 /* NSString+EncryptionCategory.h */,
-				D8719B5A844657F5A1553E8D17F8EFDF /* NSString+EncryptionCategory.m */,
-				4D4B2238B3C8897807596046ED0E7211 /* NSString+RegexCategory.h */,
-				424F70D4D8F6BEFFDC471D4CF5A7A678 /* NSString+RegexCategory.m */,
+				D8AC33807F6A53F9C66E009996FCB441 /* UIColor+TransformCategory.h */,
+				631719AA136DFA3137E6F510F472A6DD /* UIColor+TransformCategory.m */,
 			);
-			name = StringCategory;
-			path = FCCategoryOCKit/Classes/StringCategory;
+			name = ColorCategory;
+			path = FCCategoryOCKit/Classes/ColorCategory;
+			sourceTree = "<group>";
+		};
+		F77376EDEC5E72D3650CA7EE0781E7C2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B24B13B1117B336856FA070BF3168C70 /* FCCategoryOCKit */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4CBDC7AEB4AC190D36CBB940C37B3A13 /* Headers */ = {
+		09C171DAD5614573AE4032BE6C0D2BE9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D30FFAB170E7F5863E669582A9C5566 /* FCCategoryOCKit-umbrella.h in Headers */,
-				35FD381B97F8A2C79D97EA085A0E84D8 /* FCCategoryOCKit.h in Headers */,
-				86C6053C2DF49BC6B396B5E90A96BB19 /* FCStringCategoryHeader.h in Headers */,
-				AF6C7A9A678BB0DBD2395FB295FCDFD6 /* NSObject+FCCategory.h in Headers */,
-				3B187A06EC0E27E69D8971C88966E2F1 /* NSString+BaseCategory.h in Headers */,
-				20C8DA7FAB7DC65F816F8641835175CB /* NSString+EncryptionCategory.h in Headers */,
-				65218DE22C77E1DEE0CE2D47FBABABA4 /* NSString+RegexCategory.h in Headers */,
-				B5737EAE8BD7F8D0B15DB1FA90809570 /* UIButton+FCCategory.h in Headers */,
-				A236BF44CA4D2948B5040397BD1F8590 /* UIColor+TransformCategory.h in Headers */,
-				48B8989FB8663D9775369040FDDCF7FE /* UITextField+FCCategory.h in Headers */,
-				A31A61A6E0D30DB0D79BD1B2602AA58D /* UITextView+FCCategory.h in Headers */,
-				1B802C4B0AEAA4F9DB5AED6AC85AD9C7 /* UIView+FrameCategory.h in Headers */,
+				E147658122D8C2A4DD7F9ADE158AA5FD /* FCCategoryOCKit-umbrella.h in Headers */,
+				A21C44147CA177D83D675590C8F21DF1 /* FCCategoryOCKit.h in Headers */,
+				9DE532C7CD093CF60493E8D535711233 /* FCStringCategoryHeader.h in Headers */,
+				1CB48714BB090F2BC5528D3AC54AA611 /* NSDate+FCCategory.h in Headers */,
+				299656879FD86F7CB6302B569C924B07 /* NSObject+FCCategory.h in Headers */,
+				8A85DEAE2835A9412AB6636CD4CF6ABA /* NSString+BaseCategory.h in Headers */,
+				F777A9621E737C26168B09FFA29E0468 /* NSString+EncryptionCategory.h in Headers */,
+				2D4CFF6B7438962ABBF1AAE8B3BE379F /* NSString+RegexCategory.h in Headers */,
+				63E040F5FD09CF3BF0F601129360401A /* UIButton+FCCategory.h in Headers */,
+				FFD275207E1A8BD68AE89CD6D066C356 /* UIColor+TransformCategory.h in Headers */,
+				A22A1F1AD299B1419AA857CCCDD6CEB9 /* UITextField+FCCategory.h in Headers */,
+				3E49569D9BB6A15B1D8689CAA46A4856 /* UITextView+FCCategory.h in Headers */,
+				6A719155EC2DB4BCA32A5E65D2FD650B /* UIView+FrameCategory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,12 +357,12 @@
 		};
 		5DEA86C3191954F5D2299FE44E4777F6 /* FCCategoryOCKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 054BDD242942003FE712F40424A89556 /* Build configuration list for PBXNativeTarget "FCCategoryOCKit" */;
+			buildConfigurationList = AA34E8756436ED7A5743AB3CED82E13D /* Build configuration list for PBXNativeTarget "FCCategoryOCKit" */;
 			buildPhases = (
-				4CBDC7AEB4AC190D36CBB940C37B3A13 /* Headers */,
-				E88140D6C9202ABC86710FEB74D7E0AA /* Sources */,
-				B118595DEE88607A5D5140C9996C6524 /* Frameworks */,
-				21A06FCA29B0B7C4EBC37403823E322E /* Resources */,
+				09C171DAD5614573AE4032BE6C0D2BE9 /* Headers */,
+				4EE0641E42BCF6FBD283A893CD5BD590 /* Sources */,
+				35C3CFC2DA26598D1BC888C44CC33575 /* Frameworks */,
+				C24BC2930E8A94B25B6FD3336D954622 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -386,7 +402,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		21A06FCA29B0B7C4EBC37403823E322E /* Resources */ = {
+		C24BC2930E8A94B25B6FD3336D954622 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -411,20 +427,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E88140D6C9202ABC86710FEB74D7E0AA /* Sources */ = {
+		4EE0641E42BCF6FBD283A893CD5BD590 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FF329F19936C3323E7D2BD02369817B /* FCCategoryOCKit-dummy.m in Sources */,
-				BE6F54D0E28166B6F8846B59B2636406 /* NSObject+FCCategory.m in Sources */,
-				A202BA61C3C861A4119C15F755CC9060 /* NSString+BaseCategory.m in Sources */,
-				BF6EFDEA68EF4972D366898D2A38F13B /* NSString+EncryptionCategory.m in Sources */,
-				5F07859C4194ABD63E1CFF681844B853 /* NSString+RegexCategory.m in Sources */,
-				46DCBB6EFA7A44C34104A92CC552754C /* UIButton+FCCategory.m in Sources */,
-				1DC4592F4E264A615630463B6345E6CC /* UIColor+TransformCategory.m in Sources */,
-				897DC830F73C9C2C963310925E8F2070 /* UITextField+FCCategory.m in Sources */,
-				0802C7850A4A47ADAE6B4941BE9B88DC /* UITextView+FCCategory.m in Sources */,
-				C06ED47F9B2F4B05DA0F7C36AC5E6A1C /* UIView+FrameCategory.m in Sources */,
+				8392ED7A80B7FFC387508CFFDEE4E502 /* FCCategoryOCKit-dummy.m in Sources */,
+				EE64E02D272569CDA76482C080B565CF /* NSDate+FCCategory.m in Sources */,
+				C9CA98B15252C8D9880135A445DAF5DB /* NSObject+FCCategory.m in Sources */,
+				37A050DAE172D8438709F1CE315A4AAA /* NSString+BaseCategory.m in Sources */,
+				126AA6FBCFB0146C1A27F7D47F5BD092 /* NSString+EncryptionCategory.m in Sources */,
+				0FE9EAC2A8C3E2C26E406F297E09C288 /* NSString+RegexCategory.m in Sources */,
+				8A153B98D5CBD00CE6B60B5A159EFD66 /* UIButton+FCCategory.m in Sources */,
+				324FB90A81CE7BEA4AE3C000C5BA15D7 /* UIColor+TransformCategory.m in Sources */,
+				106B83BE34A38F26948DB2993565D75D /* UITextField+FCCategory.m in Sources */,
+				2A8A0462ECBA40D0B4D2BB78BCE3A525 /* UITextView+FCCategory.m in Sources */,
+				87952B44A26A8AE155181B604681C537 /* UIView+FrameCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +457,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		11FA139CBAD9E2958BCD1913B1A20C34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00523C13D7F417732EF05520641A1966 /* FCCategoryOCKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FCCategoryOCKit/FCCategoryOCKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FCCategoryOCKit/FCCategoryOCKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FCCategoryOCKit/FCCategoryOCKit.modulemap";
+				PRODUCT_MODULE_NAME = FCCategoryOCKit;
+				PRODUCT_NAME = FCCategoryOCKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		3009807FA78EC240B66581EFA15CD408 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED6C0E130E8C27BF012C4752B3D660B8 /* Pods-FCCategoryOCKit_Example.release.xcconfig */;
@@ -631,9 +680,9 @@
 			};
 			name = Debug;
 		};
-		A9F7F07FBC8EE220C74C1EC59BD987D2 /* Debug */ = {
+		A1EBF32A320DA804C024AF59B3CC5B2A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E1B08E60429BAFAFEABA4CF82E0B60D /* FCCategoryOCKit.xcconfig */;
+			baseConfigurationReference = 00523C13D7F417732EF05520641A1966 /* FCCategoryOCKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -662,55 +711,23 @@
 			};
 			name = Debug;
 		};
-		E72D9299B1B585FE4494AEE5E8E2AAE5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E1B08E60429BAFAFEABA4CF82E0B60D /* FCCategoryOCKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FCCategoryOCKit/FCCategoryOCKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FCCategoryOCKit/FCCategoryOCKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FCCategoryOCKit/FCCategoryOCKit.modulemap";
-				PRODUCT_MODULE_NAME = FCCategoryOCKit;
-				PRODUCT_NAME = FCCategoryOCKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		054BDD242942003FE712F40424A89556 /* Build configuration list for PBXNativeTarget "FCCategoryOCKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9F7F07FBC8EE220C74C1EC59BD987D2 /* Debug */,
-				E72D9299B1B585FE4494AEE5E8E2AAE5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
 				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA34E8756436ED7A5743AB3CED82E13D /* Build configuration list for PBXNativeTarget "FCCategoryOCKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1EBF32A320DA804C024AF59B3CC5B2A /* Debug */,
+				11FA139CBAD9E2958BCD1913B1A20C34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

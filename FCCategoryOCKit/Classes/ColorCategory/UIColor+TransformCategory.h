@@ -29,10 +29,20 @@ typedef struct RGBA FC_RGBA;
 10X10 的图片
  */
 @property (nonatomic, strong, readonly) UIImage *fc_image;
+/**
+ 将当前颜色转换成 0.5X0.5的可拉伸图片
+0.5X0.5 的图片
+ */
+@property(nonatomic,strong, readonly)UIImage *fc_lineImage;
 /** 随机色 */
 @property(nonatomic,strong, class, readonly)UIColor *fc_randomColor;
 
 #pragma mark - 方法
+
+/**
+ 根据指定宽高生成图片，最小{1,1}
+ */
+- (UIImage *)fc_imageWithSize:(CGSize)size;
 
 /** 0xRRGGBB 转 Color */
 + (instancetype)fc_RGBValue:(UInt32)RGBValue;

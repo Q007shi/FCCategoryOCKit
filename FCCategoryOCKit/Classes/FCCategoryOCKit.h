@@ -39,5 +39,6 @@
 #import "UIColor+TransformCategory.h"
 #import "UITextField+FCCategory.h"
 #import "UITextView+FCCategory.h"
+#import "NSDate+FCCategory.h"
 
 #endif /* FCCategoryOCKit_h */
