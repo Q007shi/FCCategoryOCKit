@@ -21,6 +21,7 @@
 #import "NSString+RegexCategory.h"
 #import "UITextField+FCCategory.h"
 #import "UITextView+FCCategory.h"
+#import "UIImage+FCCategory.h"
 #import "UIView+FrameCategory.h"
 
 FOUNDATION_EXPORT double FCCategoryOCKitVersionNumber;

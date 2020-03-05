@@ -19,7 +19,7 @@
         NSLog(@"backgroundColor 异常");
         backgroundColor = UIColor.clearColor;
     }
-    [self setBackgroundImage:backgroundColor.fc_image forState:state];
+    [self setBackgroundImage:backgroundColor.fc_transparentImage forState:state];
 }
 
 @end

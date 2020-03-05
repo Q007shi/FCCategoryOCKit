@@ -40,5 +40,6 @@
 #import "UITextField+FCCategory.h"
 #import "UITextView+FCCategory.h"
 #import "NSDate+FCCategory.h"
+#import "UIImage+FCCategory.h"
 
 #endif /* FCCategoryOCKit_h */

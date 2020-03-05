@@ -25,24 +25,28 @@ typedef struct RGBA FC_RGBA;
 /** 获取当前颜色的 RGBA 值。为 nil  或 NSNull 返回 {0,0,0,0}  */
 @property (nonatomic, assign, readonly) FC_RGBA fc_rgba;
 /**
- 将当前颜色转换成 10X10 的可拉伸图片
-10X10 的图片
+ 将当前颜色转换成 1pt X 1pt 的可拉伸不透明图片
+ 1pt X 1pt 的不透明图片
  */
-@property (nonatomic, strong, readonly) UIImage *fc_image;
+@property (nonatomic, strong, readonly) UIImage *fc_opaqueImage;
+
 /**
- 将当前颜色转换成 0.5X0.5的可拉伸图片
-0.5X0.5 的图片
+ 将当前颜色转换成 1pt X 1pt 的可拉伸透明图片
+ 1pt X 1pt 的透明图片
  */
-@property(nonatomic,strong, readonly)UIImage *fc_lineImage;
+@property (nonatomic, strong, readonly) UIImage *fc_transparentImage;
+
 /** 随机色 */
 @property(nonatomic,strong, class, readonly)UIColor *fc_randomColor;
 
 #pragma mark - 方法
 
 /**
- 根据指定宽高生成图片，最小{1,1}
+ 根据指定宽高生成图片，最小{0.5pt,0.5pt}
+ @parame opaque 不透明
+ @parame size 图片宽高
  */
-- (UIImage *)fc_imageWithSize:(CGSize)size;
+- (UIImage *)fc_imageWithOpaque:(BOOL)opaque size:(CGSize)size;
 
 /** 0xRRGGBB 转 Color */
 + (instancetype)fc_RGBValue:(UInt32)RGBValue;
