@@ -57,7 +57,7 @@ typedef struct Person FCPerson;
 //    textF.attributedText = fc_attri(@"9999", UIColor.redColor, 20);
     
     UIImageView *im = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 300, 300)];
-    im.contentMode = UIViewContentModeCenter;
+    im.contentMode = UIViewContentModeScaleAspectFit;
     [self.view addSubview:im];
     im.backgroundColor = UIColor.lightGrayColor;
     
@@ -65,7 +65,7 @@ typedef struct Person FCPerson;
     UIImage *img2 = [UIColor.blueColor fc_imageWithOpaque:YES size:CGSizeMake(20, 20)];
     UIImage *img3 = [UIColor.redColor fc_imageWithOpaque:YES size:CGSizeMake(30, 30)];
     UIImage *img4 = [UIColor.blackColor fc_imageWithOpaque:YES size:CGSizeMake(10, 10)];
-    im.image =  [UIImage fc_joinImages:@[img1,img2,img3,img4] joinType:FCImageJoinTypeHorizontal lineSpace:20];
+    im.image =  [UIImage fc_joinImages:@[img1,img2,img3,img4] joinType:FCImageJoinTypeHorizontal lineSpace:10];
 }
 
 - (NSString *)description{

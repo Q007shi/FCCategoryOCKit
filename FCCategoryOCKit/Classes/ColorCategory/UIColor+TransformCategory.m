@@ -47,6 +47,9 @@
 }
 
 - (UIImage *)_imageOpaque:(BOOL)opaque size:(CGSize)size{
+    CGFloat scale = UIScreen.mainScreen.scale;
+    size.width *= scale;
+    size.height *= scale;
     //开启图片上下文
 //    UIGraphicsBeginImageContext(rect.size);
     UIGraphicsBeginImageContextWithOptions(size, opaque, UIScreen.mainScreen.scale);
@@ -199,3 +202,4 @@
 }
 
 @end
+

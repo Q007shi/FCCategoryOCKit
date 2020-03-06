@@ -29,6 +29,7 @@
     CGFloat allW = 0;//总宽度
     CGFloat maxH = 0;//最大图片的高度
     CGFloat allH = 0;//总高度
+    lineSpace *= UIScreen.mainScreen.scale;
     NSMutableArray *mArr = NSMutableArray.array;
     for (UIImage *img in images) {
         if ([img isKindOfClass:UIImage.class]) {
@@ -137,9 +138,16 @@
  @param orientation 图片方向
  */
 - (UIImage *)fc_cutRect:(CGRect)rect orientation:(UIImageOrientation)orientation{
+    CGFloat scale = UIScreen.mainScreen.scale;
+    rect.origin.x *= scale;
+    rect.origin.y *=  scale;
+    rect.size.width *=  scale;
+    rect.size.height *= scale;
+    
     CGImageRef newImageRef = CGImageCreateWithImageInRect(self.CGImage, rect);
     UIImage *newImage = [UIImage imageWithCGImage:newImageRef scale:UIScreen.mainScreen.scale orientation:orientation];
     return newImage;
 }
 
 @end
+
