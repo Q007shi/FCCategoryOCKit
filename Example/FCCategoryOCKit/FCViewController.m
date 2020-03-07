@@ -36,36 +36,30 @@ typedef struct Person FCPerson;
     NSLog(@"%@",@"YYText".fc_md5);
     NSLog(@"%@",@"YYText".fc_toArray);
     
+    UIImageView *iv = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 200, 100)];
+    iv.backgroundColor = UIColor.whiteColor;
+    [self.view addSubview:iv];
     
-    FCPerson person = {@"张三",100};
-    FCPerson p = person;
-    NSLog(@"%@",p.name);
-    person.name = @"123";
-    p.name = @"1234";
-    NSLog(@"%@",p.name);
+    FCGradientModel *gradientM = [[FCGradientModel alloc]init:^(FCGradientModel *gm) {
+        gm.startPoint = CGPointMake(0, 0.5);
+        gm.endPoint = CGPointMake(1, 0.5);
+        FCGradientContentModel *contentM1 = [[FCGradientContentModel alloc]init:^(FCGradientContentModel *cm) {
+            cm.color = UIColor.redColor;
+            cm.location = 0;
+        }];
+        [gm.gradientContents addObject:contentM1];
+        FCGradientContentModel *contentM2 = [[FCGradientContentModel alloc]init:^(FCGradientContentModel *cm) {
+            cm.color = UIColor.blueColor;
+            cm.location = 1;
+        }];
+        [gm.gradientContents addObject:contentM2];
+    }];
+    
+    UIImage *image = [UIImage fc_gradientImageWithImageSize:CGSizeMake(100, 50) gradientModel:gradientM contentAttri:fc_attri(@"FFF", UIColor.whiteColor, 10) cornerRadius:10];
+    iv.image = image;
     
     
-    NSLog(@"-----------");
-    NSLog(@"------%@-----",@"\n 0000 ".fc_whitespaceAndNewlineCharacter);
-    NSLog(@"-----------");
     
-//    UITextView *textF = [[UITextView alloc]initWithFrame:CGRectMake(100, 100, 200, 40)];
-//    textF.backgroundColor = UIColor.lightGrayColor;
-//    textF.fc_maxLength = 10;
-//    [self.view addSubview:textF];
-//
-//    textF.attributedText = fc_attri(@"9999", UIColor.redColor, 20);
-    
-    UIImageView *im = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 300, 300)];
-    im.contentMode = UIViewContentModeScaleAspectFit;
-    [self.view addSubview:im];
-    im.backgroundColor = UIColor.lightGrayColor;
-    
-    UIImage *img1 = [UIColor.orangeColor fc_imageWithOpaque:YES size:CGSizeMake(10, 10)];
-    UIImage *img2 = [UIColor.blueColor fc_imageWithOpaque:YES size:CGSizeMake(20, 20)];
-    UIImage *img3 = [UIColor.redColor fc_imageWithOpaque:YES size:CGSizeMake(30, 30)];
-    UIImage *img4 = [UIColor.blackColor fc_imageWithOpaque:YES size:CGSizeMake(10, 10)];
-    im.image =  [UIImage fc_joinImages:@[img1,img2,img3,img4] joinType:FCImageJoinTypeHorizontal lineSpace:10];
 }
 
 - (NSString *)description{

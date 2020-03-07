@@ -33,13 +33,16 @@
 
 
 #import "NSObject+FCCategory.h"
-#import "FCStringCategoryHeader.h"
 #import "UIView+FrameCategory.h"
 #import "UIButton+FCCategory.h"
 #import "UIColor+TransformCategory.h"
 #import "UITextField+FCCategory.h"
 #import "UITextView+FCCategory.h"
 #import "NSDate+FCCategory.h"
-#import "UIImage+FCCategory.h"
+
+//NSString
+#import "FCStringCategoryHeader.h"
+//UIImage
+#import "FCImageCategoryHeader.h"
 
 #endif /* FCCategoryOCKit_h */
