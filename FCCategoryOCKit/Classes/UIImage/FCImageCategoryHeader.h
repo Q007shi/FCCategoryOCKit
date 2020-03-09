@@ -10,5 +10,6 @@
 
 #import "UIImage+FCCategory.h"
 #import "UIImage+FCGradientImage.h"
+#import "FCGradientModel.h"
 
 #endif /* FCImageCategoryHeader_h */
