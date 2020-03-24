@@ -31,6 +31,25 @@
 
 #define fc_mAttriBoldStrikethrough(str, color, fontSize) [[NSMutableAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont boldSystemFontOfSize:fontSize],NSStrikethroughStyleAttributeName : @1}]
 
+#define FCWeakSelf(type)  __weak typeof(type) weak##type = type
+
+/**
+ *  属性转字符串
+ */
+#define FCKeyPath(obj, key) @(((void)obj.key, #key))
+
+
+//是否是空对象
+#define FCIsEmpty(_object) (_object == nil \
+|| [_object isKindOfClass:[NSNull class]] \
+|| ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
+|| ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
+
+//由角度转换弧度
+#define kDegreesToRadian(x)      (M_PI * (x) / 180.0)
+//由弧度转换角度
+#define kRadianToDegrees(radian) (radian * 180.0) / (M_PI)
+
 
 #import "NSObject+FCCategory.h"
 #import "UIView+FrameCategory.h"
