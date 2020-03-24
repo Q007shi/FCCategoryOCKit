@@ -55,7 +55,11 @@ typedef struct Person FCPerson;
         [gm.gradientContents addObject:contentM2];
     }];
     
-    UIImage *image = [UIImage fc_gradientImageWithImageSize:CGSizeMake(100, 50) gradientModel:gradientM contentAttri:fc_attri(@"FFF", UIColor.whiteColor, 10) cornerRadius:10];
+//    UIImage *image = [UIImage fc_gradientImageWithImageSize:CGSizeMake(100, 50) gradientModel:gradientM contentAttri:fc_attri(@"FFF", UIColor.whiteColor, 10) cornerRadius:10];
+//    iv.image = image;
+    
+//    UIImage *image = [UIImage fc_gradientImageWithImageSize:CGSizeMake(100, 50) gradientModel:gradientM contentAttri:fc_attri(@"FFF", UIColor.whiteColor, 10) corners:UIRectCornerTopLeft | UIRectCornerBottomLeft  cornerRadius:CGSizeMake(10, 20)];
+    UIImage *image = [UIImage fc_gradientImageWithImageSize:CGSizeMake(100, 50) gradientModel:gradientM contentAttri:fc_attri(@"FFF", UIColor.whiteColor, 10) corners:UIRectCornerTopLeft | UIRectCornerBottomLeft  cornerRadius:CGSizeMake(10, 20) opaque:YES];
     iv.image = image;
     
     

@@ -14,4 +14,9 @@
  */
 - (NSString *)fc_stringWithFormat:(NSString *)Format;
 
+/**
+ 将 dateString 根据 format 格式转换为 Date
+ */
++ (NSDate *)fc_dateWithDateString:(NSString *)dateString format:(NSString *)format;
+
 @end
