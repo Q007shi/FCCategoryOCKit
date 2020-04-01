@@ -22,8 +22,8 @@
     method_exchangeImplementations(method3, method4);
 }
 
-- (instancetype)fc_initWithCoder:(CGRect)frame {
-    [self fc_initWithCoder:frame];
+- (instancetype)fc_initWithFrame:(CGRect)frame {
+    [self fc_initWithFrame:frame];
     if (self) {
         //注册观察UITextField输入变化的方法。
         [self _addLengthObserverEvent];
@@ -32,8 +32,8 @@
 }
 
 
-- (instancetype)fc_initWithFrame:(NSCoder *)aDecoder {
-    [self fc_initWithFrame:aDecoder];
+- (instancetype)fc_initWithCoder:(NSCoder *)aDecoder {
+    [self fc_initWithCoder:aDecoder];
     if (self) {
         [self _addLengthObserverEvent];
     }
