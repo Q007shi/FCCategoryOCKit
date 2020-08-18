@@ -34,6 +34,8 @@
 
 #define FCWeakSelf(type)  __weak typeof(type) weak##type = type
 
+#define FCScaleValue( value ) (UIScreen.mainScreen.bounds/375.0)*value
+
 /**
  *  属性转字符串
  */
