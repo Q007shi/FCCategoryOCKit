@@ -244,7 +244,7 @@
 				ORGANIZATIONNAME = "2585299617@qq.com";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = 75TU6G6GNQ;
+						DevelopmentTeam = 3F337QG256;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -500,7 +500,7 @@
 			baseConfigurationReference = 22EAA9103A69205730939F29 /* Pods-FCCategoryOCKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 75TU6G6GNQ;
+				DEVELOPMENT_TEAM = 3F337QG256;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FCCategoryOCKit/FCCategoryOCKit-Prefix.pch";
 				INFOPLIST_FILE = "FCCategoryOCKit/FCCategoryOCKit-Info.plist";
@@ -518,7 +518,7 @@
 			baseConfigurationReference = 8A00ADA3E36340D9E96C370F /* Pods-FCCategoryOCKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 75TU6G6GNQ;
+				DEVELOPMENT_TEAM = 3F337QG256;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FCCategoryOCKit/FCCategoryOCKit-Prefix.pch";
 				INFOPLIST_FILE = "FCCategoryOCKit/FCCategoryOCKit-Info.plist";

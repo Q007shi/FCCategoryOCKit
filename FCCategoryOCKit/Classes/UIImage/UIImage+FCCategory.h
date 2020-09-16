@@ -20,6 +20,7 @@ typedef NS_ENUM(NSInteger,FCImageJoinType){
     FCImageJoinTypeCenter = 1 << 6,//居中
 };
 
+NS_ASSUME_NONNULL_BEGIN
 @interface UIImage (FCCategory)
 
 /**
@@ -44,4 +45,19 @@ typedef NS_ENUM(NSInteger,FCImageJoinType){
  */
 - (UIImage *)fc_cutRect:(CGRect)rect orientation:(UIImageOrientation)orientation;
 
+/**
+ 生成二维码图片
+ @param qrStr 要生存二维码的字符串
+ @param qrSize 二维码大小
+ @param centerImage 中间图片
+ */
++ (UIImage  *)fc_QRString:(NSString *)qrStr qrSize:(CGFloat)qrSize centerImage:(UIImage * _Nullable)centerImage;
+
+/**
+CIImage 转 UIImage
+*/
++ (UIImage *)fc_createNonInterpolatedUIImageFormCIImage:(CIImage *)image withSize:(CGFloat) size;
+
 @end
+
+NS_ASSUME_NONNULL_END
