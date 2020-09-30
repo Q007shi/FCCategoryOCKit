@@ -32,6 +32,8 @@
 
 #define fc_mAttriBoldStrikethrough(str, color, fontSize) [[NSMutableAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont boldSystemFontOfSize:fontSize],NSStrikethroughStyleAttributeName : @1}]
 
+#define fc_mAttriStyle(str, color, fontSize, style) [[NSMutableAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color, NSFontAttributeName : [UIFont systemFontOfSize:fontSize],NSParagraphStyleAttributeName : style}]
+
 #define FCWeakSelf(type)  __weak typeof(type) weak##type = type
 
 #define FCScaleValue( value ) (UIScreen.mainScreen.bounds/375.0)*value
