@@ -35,6 +35,7 @@ typedef struct Person FCPerson;
     NSLog(@"%@",@"FCCategory".fc_md5);
     NSLog(@"%@",@"YYText".fc_md5);
     NSLog(@"%@",@"YYText".fc_toArray);
+    NSLog(@"%@",getIPAddress(YES));
     
     UIImageView *iv = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 200, 100)];
     iv.backgroundColor = UIColor.whiteColor;

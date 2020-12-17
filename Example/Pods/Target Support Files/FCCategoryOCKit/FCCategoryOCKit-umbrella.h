@@ -25,6 +25,7 @@
 #import "FCImageCategoryHeader.h"
 #import "UIImage+FCCategory.h"
 #import "UIImage+FCGradientImage.h"
+#import "FCCategoryUtils.h"
 #import "UIView+FrameCategory.h"
 
 FOUNDATION_EXPORT double FCCategoryOCKitVersionNumber;

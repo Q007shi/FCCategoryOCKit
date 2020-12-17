@@ -69,4 +69,11 @@
 //UIImage
 #import "FCImageCategoryHeader.h"
 
+#import "FCCategoryUtils.h"
+
+
+#define getIPAddress(preferIPv4) [FCCategoryUtils getIPAddress:preferIPv4]
+
+
+
 #endif /* FCCategoryOCKit_h */
