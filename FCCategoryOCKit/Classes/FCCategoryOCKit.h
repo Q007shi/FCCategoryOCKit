@@ -38,8 +38,7 @@
 
 #define FCScreen_W UIScreen.mainScreen.bounds.size.width
 #define FCScreen_H UIScreen.mainScreen.bounds.size.height
-#define FCScaleValue( value ) (UIScreen.mainScreen.bounds/375.0)*value
-#define FCAutoValue( value ) (float)((value/375.0)*UIScreen.mainScreen.bounds.size.width)
+#define FCAutoValue( value ) (UIScreen.mainScreen.bounds.size.width/375.0)*value
 
 /**
  *  属性转字符串
