@@ -13,10 +13,15 @@
 #define fc_mAttriAttachment(attachment) [[NSMutableAttributedString alloc]initWithAttributedString:fc_attriAttachment(attachment)]
 //---
 #define fc_attri(str, color, fontSize) [[NSAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont systemFontOfSize:fontSize]}]
-#define fc_styleAttri(str, color, fontSize,style) [[NSAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont systemFontOfSize:fontSize],NSParagraphStyleAttributeName : style}]
+
 #define fc_attriStyle(str, color, fontSize, style) [[NSAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color, NSFontAttributeName : [UIFont systemFontOfSize:fontSize],NSParagraphStyleAttributeName : style}]
+
 #define fc_attriBold(str, color, fontSize) [[NSAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont boldSystemFontOfSize:fontSize]}]
+
+#define fc_attriBoldStyle(str, color, fontSize, style) [[NSAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color, NSFontAttributeName : [UIFont boldSystemFontOfSize:fontSize],NSParagraphStyleAttributeName : style}]
+
 #define fc_attriUnderLine(str, color, fontSize) [[NSAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont systemFontOfSize:fontSize],NSUnderlineStyleAttributeName : @1}]
+
 #define fc_attriStrikethrough(str, color, fontSize) [[NSAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont systemFontOfSize:fontSize],NSStrikethroughStyleAttributeName : @1}]
 
 //---
@@ -33,6 +38,8 @@
 #define fc_mAttriBoldStrikethrough(str, color, fontSize) [[NSMutableAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color,NSFontAttributeName : [UIFont boldSystemFontOfSize:fontSize],NSStrikethroughStyleAttributeName : @1}]
 
 #define fc_mAttriStyle(str, color, fontSize, style) [[NSMutableAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color, NSFontAttributeName : [UIFont systemFontOfSize:fontSize],NSParagraphStyleAttributeName : style}]
+
+#define fc_mAttriBoldStyle(str, color, fontSize, style) [[NSMutableAttributedString alloc]initWithString:str attributes:@{NSForegroundColorAttributeName : color, NSFontAttributeName : [UIFont boldSystemFontOfSize:fontSize],NSParagraphStyleAttributeName : style}]
 
 #define FCWeakSelf(type)  __weak typeof(type) weak##type = type
 
