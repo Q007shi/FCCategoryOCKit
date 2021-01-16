@@ -64,6 +64,23 @@
 //由弧度转换角度
 #define kRadianToDegrees(radian) (radian * 180.0) / (M_PI)
 
+#define fc_numberFormatterDecimal( doubleNum ) ({\
+    NSNumberFormatter *formatter = NSNumberFormatter.new;\
+    formatter.minimumFractionDigits = 2;\
+    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];\
+    NSString *str = [formatter stringFromNumber:@(doubleNum)];\
+    str;\
+})
+
+#define fc_priceAttri( priceStr, textColor, logoSize, yuanSize, fenSize) ({\
+    NSRange range = [priceStr rangeOfString:@"."];\
+    NSMutableAttributedString *mattri = [[NSMutableAttributedString alloc]initWithString:priceStr attributes:@{NSForegroundColorAttributeName : textColor}];\
+    [mattri addAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:logoSize]} range:NSMakeRange(0, 1)];\
+    [mattri addAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:yuanSize]} range:NSMakeRange(1, range.location-1)];\
+    [mattri addAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:fenSize]} range:NSMakeRange(range.location, 3)];\
+    mattri;\
+})
+
 
 #import "NSObject+FCCategory.h"
 #import "UIView+FrameCategory.h"
