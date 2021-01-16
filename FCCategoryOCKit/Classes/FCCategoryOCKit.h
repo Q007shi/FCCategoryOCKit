@@ -72,12 +72,12 @@
     str;\
 })
 
-#define fc_priceAttri( priceStr, textColor, logoSize, yuanSize, fenSize) ({\
+#define fc_priceAttri( priceStr, textColor, logoFont, yuanFont, fenFont) ({\
     NSRange range = [priceStr rangeOfString:@"."];\
     NSMutableAttributedString *mattri = [[NSMutableAttributedString alloc]initWithString:priceStr attributes:@{NSForegroundColorAttributeName : textColor}];\
-    [mattri addAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:logoSize]} range:NSMakeRange(0, 1)];\
-    [mattri addAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:yuanSize]} range:NSMakeRange(1, range.location-1)];\
-    [mattri addAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:fenSize]} range:NSMakeRange(range.location, 3)];\
+    [mattri addAttributes:@{NSFontAttributeName : logoFont} range:NSMakeRange(0, 1)];\
+    [mattri addAttributes:@{NSFontAttributeName : yuanFont} range:NSMakeRange(1, range.location-1)];\
+    [mattri addAttributes:@{NSFontAttributeName : fenFont} range:NSMakeRange(range.location, 3)];\
     mattri;\
 })
 
