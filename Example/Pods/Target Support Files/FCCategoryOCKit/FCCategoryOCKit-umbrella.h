@@ -27,6 +27,7 @@
 #import "UIImage+FCGradientImage.h"
 #import "FCCategoryUtils.h"
 #import "UIView+FrameCategory.h"
+#import "UIView+ShapeGradient.h"
 
 FOUNDATION_EXPORT double FCCategoryOCKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char FCCategoryOCKitVersionString[];

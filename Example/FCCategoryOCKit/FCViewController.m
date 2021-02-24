@@ -9,6 +9,9 @@
 #import "FCViewController.h"
 #import <FCCategoryOCKit/FCCategoryOCKit.h>
 #import "FCTestModel.h"
+#import <FCCategoryOCKit/UIView+ShapeGradient.h>
+
+#import "FCTextView.h"
 
 typedef NS_ENUM(NSInteger,Weak){
     SunDay,
@@ -55,16 +58,23 @@ typedef struct Person FCPerson;
         }];
         [gm.gradientContents addObject:contentM2];
     }];
+    iv.fc_gradientModel = gradientM;
+    
+    self.view.fc_gradientModel = gradientM;
     
 //    UIImage *image = [UIImage fc_gradientImageWithImageSize:CGSizeMake(100, 50) gradientModel:gradientM contentAttri:fc_attri(@"FFF", UIColor.whiteColor, 10) cornerRadius:10];
 //    iv.image = image;
     
 //    UIImage *image = [UIImage fc_gradientImageWithImageSize:CGSizeMake(100, 50) gradientModel:gradientM contentAttri:fc_attri(@"FFF", UIColor.whiteColor, 10) corners:UIRectCornerTopLeft | UIRectCornerBottomLeft  cornerRadius:CGSizeMake(10, 20)];
-    UIImage *image = [UIImage fc_gradientImageWithImageSize:CGSizeMake(100, 50) gradientModel:gradientM contentAttri:fc_attri(@"FFF", UIColor.whiteColor, 10) corners:UIRectCornerTopLeft | UIRectCornerBottomLeft  cornerRadius:CGSizeMake(10, 20) opaque:YES];
-    iv.image = image;
+//    UIImage *image = [UIImage fc_gradientImageWithImageSize:CGSizeMake(100, 50) gradientModel:gradientM contentAttri:fc_attri(@"FFF", UIColor.whiteColor, 10) corners:UIRectCornerTopLeft | UIRectCornerBottomLeft  cornerRadius:CGSizeMake(10, 20) opaque:YES];
+//    iv.image = image;
     
-
-    
+    FCTextView *tView = [[FCTextView alloc]initWithFrame:CGRectMake(100, 300, 100, 50)];
+    tView.backgroundColor = UIColor.redColor;
+    tView.fc_gradientModel = gradientM;
+    tView.fc_cornerRadii = CGSizeMake(10, 20);
+    tView.fc_rectCorner = UIRectCornerTopLeft | UIRectCornerTopRight;
+    [self.view addSubview:tView];
 }
 
 - (NSString *)description{

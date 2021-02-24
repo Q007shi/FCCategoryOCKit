@@ -89,6 +89,7 @@
 #import "UITextField+FCCategory.h"
 #import "UITextView+FCCategory.h"
 #import "NSDate+FCCategory.h"
+#import "UIView+ShapeGradient.h"
 
 //NSString
 #import "FCStringCategoryHeader.h"

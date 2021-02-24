@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55E7136D240222C300DF3A24 /* FCTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E7136C240222C300DF3A24 /* FCTestModel.m */; };
+		5919DA5625E5DCBA00234221 /* FCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5919DA5525E5DCBA00234221 /* FCTextView.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 		22EAA9103A69205730939F29 /* Pods-FCCategoryOCKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCCategoryOCKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-FCCategoryOCKit_Example/Pods-FCCategoryOCKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		55E7136B240222C300DF3A24 /* FCTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCTestModel.h; sourceTree = "<group>"; };
 		55E7136C240222C300DF3A24 /* FCTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCTestModel.m; sourceTree = "<group>"; };
+		5919DA5425E5DCBA00234221 /* FCTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCTextView.h; sourceTree = "<group>"; };
+		5919DA5525E5DCBA00234221 /* FCTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCTextView.m; sourceTree = "<group>"; };
 		59816E1368A677A3BA5BA7C2 /* Pods_FCCategoryOCKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCCategoryOCKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA29AF1B597B3E626EC36C1 /* FCCategoryOCKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FCCategoryOCKit.podspec; path = ../FCCategoryOCKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* FCCategoryOCKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCCategoryOCKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +151,8 @@
 				6003F594195388D20070C39A /* Supporting Files */,
 				55E7136B240222C300DF3A24 /* FCTestModel.h */,
 				55E7136C240222C300DF3A24 /* FCTestModel.m */,
+				5919DA5425E5DCBA00234221 /* FCTextView.h */,
+				5919DA5525E5DCBA00234221 /* FCTextView.m */,
 			);
 			name = "Example for FCCategoryOCKit";
 			path = FCCategoryOCKit;
@@ -344,6 +349,7 @@
 				6003F59E195388D20070C39A /* FCAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* FCViewController.m in Sources */,
 				55E7136D240222C300DF3A24 /* FCTestModel.m in Sources */,
+				5919DA5625E5DCBA00234221 /* FCTextView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
