@@ -69,12 +69,12 @@ typedef struct Person FCPerson;
 //    UIImage *image = [UIImage fc_gradientImageWithImageSize:CGSizeMake(100, 50) gradientModel:gradientM contentAttri:fc_attri(@"FFF", UIColor.whiteColor, 10) corners:UIRectCornerTopLeft | UIRectCornerBottomLeft  cornerRadius:CGSizeMake(10, 20) opaque:YES];
 //    iv.image = image;
     
-    FCTextView *tView = [[FCTextView alloc]initWithFrame:CGRectMake(100, 300, 100, 50)];
-    tView.backgroundColor = UIColor.redColor;
-    tView.fc_gradientModel = gradientM;
-    tView.fc_cornerRadii = CGSizeMake(10, 20);
-    tView.fc_rectCorner = UIRectCornerTopLeft | UIRectCornerTopRight;
-    [self.view addSubview:tView];
+//    FCTextView *tView = [[FCTextView alloc]initWithFrame:CGRectMake(100, 300, 100, 50)];
+//    tView.backgroundColor = UIColor.redColor;
+//    tView.fc_gradientModel = gradientM;
+//    tView.fc_cornerRadii = CGSizeMake(10, 20);
+//    tView.fc_rectCorner = UIRectCornerTopLeft | UIRectCornerTopRight;
+//    [self.view addSubview:tView];
 }
 
 - (NSString *)description{
