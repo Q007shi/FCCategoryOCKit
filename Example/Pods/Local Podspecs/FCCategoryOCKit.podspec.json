@@ -1,6 +1,6 @@
 {
   "name": "FCCategoryOCKit",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "summary": "A short description of FCCategoryOCKit.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Q007shi/FCCategoryOCKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Q007shi/FCCategoryOCKit.git",
-    "tag": "0.1.15"
+    "tag": "0.1.16"
   },
   "platforms": {
     "ios": "9.0"

@@ -58,9 +58,9 @@ typedef struct Person FCPerson;
         }];
         [gm.gradientContents addObject:contentM2];
     }];
-    iv.fc_gradientModel = gradientM;
-    
-    self.view.fc_gradientModel = gradientM;
+//    iv.fc_gradientModel = gradientM;
+//    
+//    self.view.fc_gradientModel = gradientM;
     
 //    UIImage *image = [UIImage fc_gradientImageWithImageSize:CGSizeMake(100, 50) gradientModel:gradientM contentAttri:fc_attri(@"FFF", UIColor.whiteColor, 10) cornerRadius:10];
 //    iv.image = image;

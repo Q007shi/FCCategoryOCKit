@@ -1,5 +1,5 @@
 PODS:
-  - FCCategoryOCKit (0.1.15)
+  - FCCategoryOCKit (0.1.16)
 
 DEPENDENCIES:
   - FCCategoryOCKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FCCategoryOCKit: 05a9d0ab9a8ec644d4e07d73efd6caede804138a
+  FCCategoryOCKit: 27a2f4a4cd258e3d16154b763512ac879ffe9f14
 
 PODFILE CHECKSUM: 294720434080b1f9a99d1819b84190561cc69d10
 
