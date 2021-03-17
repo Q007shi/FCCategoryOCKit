@@ -10,8 +10,11 @@
 #import <FCCategoryOCKit/FCCategoryOCKit.h>
 #import "FCTestModel.h"
 #import <FCCategoryOCKit/UIView+ShapeGradient.h>
+#import "UITextView+FCCategory.h"
 
 #import "FCTextView.h"
+
+#import "FCCategoryUtils.h"
 
 typedef NS_ENUM(NSInteger,Weak){
     SunDay,
@@ -25,10 +28,19 @@ struct Person{
 typedef struct Person FCPerson;
 
 @interface FCViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+
+
+/** <#aaa#> */
+@property(nonatomic,strong)FCCategoryUtils *utils;
+
+
 
 @end
 
 @implementation FCViewController
+
+
 
 
 - (void)viewDidLoad
@@ -39,6 +51,10 @@ typedef struct Person FCPerson;
     NSLog(@"%@",@"YYText".fc_md5);
     NSLog(@"%@",@"YYText".fc_toArray);
     NSLog(@"%@",getIPAddress(YES));
+    
+    self.textView.fc_maxLength = 10;
+    
+    
     
     UIImageView *iv = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 200, 100)];
     iv.backgroundColor = UIColor.whiteColor;
@@ -75,10 +91,17 @@ typedef struct Person FCPerson;
 //    tView.fc_cornerRadii = CGSizeMake(10, 20);
 //    tView.fc_rectCorner = UIRectCornerTopLeft | UIRectCornerTopRight;
 //    [self.view addSubview:tView];
+    
+    _utils = FCCategoryUtils.new;
 }
 
 - (NSString *)description{
     return @"";
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    self.utils.fc_aaSet(self.utils.fc_aa + 1);
+    NSLog(@"%@",@(self.utils.fc_aa));
 }
 
 @end

@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FCGlobalMacro.h"
 
 @interface FCCategoryUtils : NSObject
 

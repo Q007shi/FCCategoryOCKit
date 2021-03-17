@@ -86,8 +86,8 @@
 #import "UIView+FrameCategory.h"
 #import "UIButton+FCCategory.h"
 #import "UIColor+TransformCategory.h"
-#import "UITextField+FCCategory.h"
-#import "UITextView+FCCategory.h"
+//#import "UITextField+FCCategory.h"
+//#import "UITextView+FCCategory.h"
 #import "NSDate+FCCategory.h"
 //#import "UIView+ShapeGradient.h"
 
@@ -97,6 +97,8 @@
 #import "FCImageCategoryHeader.h"
 
 #import "FCCategoryUtils.h"
+
+#import "FCGlobalMacro.h"
 
 
 #define getIPAddress(preferIPv4) [FCCategoryUtils getIPAddress:preferIPv4]

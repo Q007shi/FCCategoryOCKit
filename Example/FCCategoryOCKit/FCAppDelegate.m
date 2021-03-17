@@ -7,6 +7,7 @@
 //
 
 #import "FCAppDelegate.h"
+#import "UITextView+FCCategory.h"
 
 @implementation FCAppDelegate
 

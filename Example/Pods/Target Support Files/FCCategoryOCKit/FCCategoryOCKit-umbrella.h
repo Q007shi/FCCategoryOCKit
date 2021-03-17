@@ -13,6 +13,7 @@
 #import "UIButton+FCCategory.h"
 #import "UIColor+TransformCategory.h"
 #import "FCCategoryOCKit.h"
+#import "FCGlobalMacro.h"
 #import "NSDate+FCCategory.h"
 #import "NSObject+FCCategory.h"
 #import "FCStringCategoryHeader.h"
