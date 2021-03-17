@@ -100,8 +100,7 @@ typedef struct Person FCPerson;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    self.utils.fc_aaSet(self.utils.fc_aa + 1);
-    NSLog(@"%@",@(self.utils.fc_aa));
+    
 }
 
 @end
